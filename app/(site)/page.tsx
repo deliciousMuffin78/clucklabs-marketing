@@ -14,10 +14,10 @@ import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
+  title: "Cluck | Train Better Together: Clubs, Pros, Creators, Brands & Members",
 
   // other metadata
-  description: "This is Home for Solid Pro"
+  description: "Cluck - The connected wellness system for real life."
 };
 
 export default function Home() {

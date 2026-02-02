@@ -32,31 +32,31 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/logo-light.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+                    src="/images/logo/logo-dark.png"
                     alt="Logo"
                     className="hidden dark:block"
                   />
                 </a>
 
                 <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  It's what you do.
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   contact
                 </p>
                 <a
-                  href="#"
+                  href="mailto:hello@clucklabs.com"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  hello@clucklabs.com
                 </a>
               </motion.div>
 
@@ -86,7 +86,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Home
@@ -94,26 +94,42 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/features/users"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Product
+                        Users / Members
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/features/clubs"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Careers
+                        Clubs / Communities
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/features/pros"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Pricing
+                        Pros / Coaches
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/features/creators"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Creators / Influencers
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/features/brands"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Brands & Small Businesses
                       </a>
                     </li>
                   </ul>
@@ -144,31 +160,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Company
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Press media
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Our Blog
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
+                        href="/support"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Contact Us
@@ -265,17 +257,17 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-8">
                 <li>
-                  <a href="#" className="hover:text-primary">
-                    English
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="/privacy" className="hover:text-primary">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="/terms" className="hover:text-primary">
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="/support" className="hover:text-primary">
                     Support
                   </a>
                 </li>
@@ -301,7 +293,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} Cluck Labs, Inc. All rights reserved
               </p>
             </motion.div>
 

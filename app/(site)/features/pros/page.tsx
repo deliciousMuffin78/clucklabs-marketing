@@ -92,17 +92,17 @@ export default function ProsPage() {
         {/* Content */}
         <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[23%] items-center justify-center px-4 text-center md:px-8 xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
-            <h4 className="mb-4.5 text-lg font-medium tracking-[4px] text-white uppercase">
+            <h4 className="text-primary mb-4.5 text-lg font-medium tracking-[4px] uppercase">
               Coaches · Trainers · Nutritionists · Specialists
             </h4>
-            <h1 className="mb-6 max-w-[900px] text-[4.1rem] leading-[1.1] font-bold text-white">
+            <h1 className="text-primary mb-6 max-w-[900px] text-[4.1rem] leading-[1.1] font-bold">
               You don’t need to be famous. You need to be good.
             </h1>
-            <p className="mb-10 max-w-[900px] text-xl text-white drop-shadow-sm md:text-2xl">
+            <p className="text-primary mb-10 max-w-[900px] text-xl drop-shadow-sm md:text-2xl">
               Cluck helps pros deliver better outcomes, get discovered by the
               right people, and earn across coaching, programs, and plans
-              without living on content and algorithms. <br/>Free to join. We earn
-              when you earn.
+              without living on content and algorithms. <br />
+              Free to join. We earn when you earn.
             </p>
 
             <div className="flex flex-col items-center gap-6">

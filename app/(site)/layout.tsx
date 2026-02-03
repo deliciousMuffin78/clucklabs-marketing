@@ -1,9 +1,12 @@
-import { Inter } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "../globals.css";
 import type { Metadata } from "next";
 import Proivder from "./Provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const archivo = Archivo({ 
+  subsets: ["latin"],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Cluck | Train Better Together: Clubs, Pros, Creators, Brands & Members",
@@ -20,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-black ${inter.className}`}>
+      <body className={`dark:bg-black ${archivo.className}`}>
         <Proivder>{children}</Proivder>
       </body>
     </html>

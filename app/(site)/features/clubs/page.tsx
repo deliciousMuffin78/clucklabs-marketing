@@ -142,12 +142,12 @@ export default function ClubsPage() {
               />
             </div>
             {clubFeatures.map((feature, index) => (
-              <div key={index} className="md:flex-1">
+              <div key={index} className="flex">
                 <NoiseBackground
                   gradientColors={["#b4dcff", "#ffffff", "#f0d2ff"]}
                   noiseIntensity={0.1}
                   speed={0.05}
-                  containerClassName="rounded-[32px] p-[10px] shadow-sm"
+                  containerClassName="rounded-[32px] p-[10px] shadow-sm h-full w-full"
                   className="h-full"
                 >
                   <div className="dark:bg-blacksection flex h-full flex-col rounded-[22px] bg-white p-8">

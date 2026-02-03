@@ -14,7 +14,6 @@ import {
   MobileNavMenu,
   NavbarButton,
 } from "@/components/ui/resizable-navbar";
-import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import { cn } from "@/lib/utils";
 
@@ -23,7 +22,7 @@ const Header = () => {
   const pathUrl = usePathname();
 
   // Prepare nav items from menuData
-  const mainNavItems = menuData.map(item => ({
+  const mainNavItems = menuData.map((item) => ({
     name: item.title,
     link: item.path || "#",
   }));
@@ -32,27 +31,27 @@ const Header = () => {
     <Navbar>
       {/* Desktop Navigation */}
       <NavBody>
-        <Link href="/" className="flex items-center shrink-0 w-[100px]">
+        <Link href="/" className="flex w-[100px] shrink-0 items-center">
           <Image
             src="/images/logo/logo-dark.png"
             alt="Cluck Logo"
             width={100}
             height={25}
-            className="hidden dark:block h-auto w-full"
+            className="hidden h-auto w-full dark:block"
           />
           <Image
             src="/images/logo/logo-light.png"
             alt="Cluck Logo"
             width={100}
             height={25}
-            className="dark:hidden h-auto w-full"
+            className="h-auto w-full dark:hidden"
           />
         </Link>
-        
+
         <NavItems items={mainNavItems} />
 
-        <div className="flex items-center gap-4 shrink-0 justify-end w-[100px]">
-          <ThemeToggler />
+        <div className="flex w-[100px] shrink-0 items-center justify-end gap-4">
+          {/* ThemeToggler removed */}
         </div>
       </NavBody>
 
@@ -76,32 +75,36 @@ const Header = () => {
             />
           </Link>
           <div className="flex items-center gap-2">
-            <ThemeToggler />
-            <MobileNavToggle isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+            <MobileNavToggle
+              isOpen={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
+            />
           </div>
         </MobileNavHeader>
-        
+
         <MobileNavMenu isOpen={isOpen} onClose={() => setIsOpen(false)}>
-          <div className="flex flex-col gap-4 w-full">
+          <div className="flex w-full flex-col gap-4">
             {menuData.map((item) => (
               <div key={item.id} className="flex flex-col gap-2">
-                <Link 
-                  href={item.path || "#"} 
+                <Link
+                  href={item.path || "#"}
                   className={cn(
                     "text-lg font-medium",
-                    pathUrl === item.path ? "text-primary" : "text-black dark:text-white"
+                    pathUrl === item.path
+                      ? "text-primary"
+                      : "text-black dark:text-white",
                   )}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.title}
                 </Link>
                 {item.submenu && (
-                  <div className="flex flex-col gap-2 pl-4 border-l border-stroke dark:border-strokedark">
+                  <div className="border-stroke dark:border-strokedark flex flex-col gap-2 border-l pl-4">
                     {item.submenu.map((sub) => (
-                      <Link 
-                        key={sub.id} 
-                        href={sub.path || "#"} 
-                        className="text-sm text-waterloo hover:text-primary"
+                      <Link
+                        key={sub.id}
+                        href={sub.path || "#"}
+                        className="text-waterloo hover:text-primary text-sm"
                         onClick={() => setIsOpen(false)}
                       >
                         {sub.title}

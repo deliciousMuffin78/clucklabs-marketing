@@ -1,138 +1,195 @@
-What this container is at a structural level
+What this border actually is
 
-This is a two layer container, not one.
+This is a two layer container, not a border property.
 
-Visually, what you are seeing as a “thick translucent border” is actually a separate outer shell, and the white area is a distinct inner surface sitting on top of it.
+Layer 1. Outer shell (the border)
 
-Think of it as:
+Shape: rounded rectangle or pill
 
-a soft glass frame
+Thickness: thick, around 8 to 14px visually
 
-with a solid white card placed inside it
+Fill: soft gradient, not solid
 
-The border is not a stroke. It is space filled with translucent material.
+Opacity: semi translucent
 
-Layer 1: Outer shell (the thick translucent frame)
-Shape and size
+Blur: very subtle, almost imperceptible
 
-Rounded rectangle with large corner radius
+Purpose: this is the border itself
 
-Border thickness is visually thick, roughly 16 to 24px on all sides
+Layer 2. Inner surface (the card)
 
-This shell defines the overall silhouette
+Shape: same radius, slightly smaller
 
-Color and material
+Fill: pure white
 
-Color is near white, but not solid
+No gradient
 
-It picks up background colors slightly
+No noise
 
-Appears as a very light frosted glass
+Clean and flat
 
-Transparency
+The border is not drawn.
+It is revealed by spacing between the two layers.
 
-Semi transparent
+Border gradient characteristics (important)
 
-Opacity is low enough that:
+The gradient you want is:
 
-Background gradients subtly show through
+Direction: left to right
 
-But content behind does not become readable
+Start color: cool pastel blue
 
-Blur
+Middle: almost white
 
-There is backdrop blur
+End color: soft lavender or pink
 
-Blur is strong enough to soften background colors
+Saturation: low
 
-Blur is uniform, no vignette or edge sharpening
+Contrast: low
 
-This is what gives it the “glass border” feel instead of a flat outline.
+Alpha: around 60 to 80 percent
 
-Layer 2: Inner container (the white surface)
-Shape
+It should feel like frosted glass light, not color paint.
 
-Rounded rectangle
+Example color feel (descriptive)
 
-Slightly smaller radius than the outer shell
+Left: icy sky blue
 
-Centered perfectly inside the outer shell
+Center: milky white
 
-Color
+Right: pale lavender blush
 
-Solid white or near white
+No harsh stops. No visible bands.
 
-Fully opaque
+Why your current approach cannot produce this
 
-No gradient inside
+Noise backgrounds and animated borders fail here because:
 
-This surface is intentionally boring. It exists to make text and UI readable.
+Noise breaks edge clarity
 
-Relationship between the two layers
+Animation adds visual tension
 
-The inner white container floats inside the outer shell
+Border becomes busy instead of elegant
 
-There is equal spacing on all sides
+This effect is static, calm, editorial.
 
-That spacing is the visible border
+Correct structural model (this is the key)
 
-Important detail:
-The border is not drawn around the inner container.
-It exists because the outer container is larger.
+Think of it like this:
 
-Shadow and elevation
-Outer shell
+Outer container = gradient shell
 
-Very soft, wide shadow
+Padding = border thickness
 
-Low opacity
+Inner container = white card
 
-Shadow spreads outward, not downward
+The gradient lives only in the outer container background.
 
-Makes the whole block feel lifted from the background
+The inner card covers the center, leaving only the edges visible.
+
+That is how the pill button works in your screenshot.
+
+Exact visual rules to follow
+
+Use these rules and it will look right immediately.
+
+Outer container
+
+Rounded radius: very high, always larger than inner
+
+Background: linear gradient, pastel
+
+No shadow or only extremely soft ambient shadow
+
+No noise
+
+No animation
 
 Inner container
 
-Either:
+Radius: outer radius minus border thickness
 
-No shadow at all
+Background: pure white
 
-Or a very subtle internal shadow
+Slight shadow optional
 
-Most of the elevation is carried by the outer shell, not the inner card.
+Content lives here
 
-Edge behavior
+Why this works visually
 
-No sharp edges anywhere
+Edges look intentional and smooth
 
-Corners are smooth and consistent
+Border reads as light, not color
 
-No outlines or strokes
+Card feels premium and modern
 
-Everything feels padded, calm, and tactile.
+Matches Framer, Linear, Notion style systems
 
-Interaction with background
+This is exactly how that pill button is constructed.
 
-Because the outer shell is translucent:
+One sentence mental model
 
-Background gradients softly bleed into it
+You are not styling a border.
+You are placing a white card inside a translucent gradient shell.
 
-The border subtly changes tone depending on what sits behind
+If you want, next I can:
 
-This makes it feel alive and integrated into the page
+Give you exact hex values that match the screenshot
 
-The white inner container stays stable and readable regardless.
+Help you tune radius and thickness for desktop vs mobile
 
-Why this looks premium
+Explain how to adapt this for dark mode without losing the effect
 
-This works because:
+EXAMPLE> 
+import { cn } from "@/lib/utils";
+import { NoiseBackground } from "@/components/ui/noise-background";
 
-Thickness comes from space, not lines
+export function NoiseBackgroundDemoSecond() {
+  return (
+    <div className="mx-auto max-w-sm">
+      <NoiseBackground
+        gradientColors={[
+          "rgb(255, 100, 150)",
+          "rgb(100, 150, 255)",
+          "rgb(255, 200, 100)",
+        ]}
+      >
+        <Card>
+          <img
+            src="https://assets.aceternity.com/blog/how-to-create-a-bento-grid.png"
+            alt="Task Complete"
+            className="h-60 w-full rounded-lg object-cover"
+          />
+          <div className="px-4 py-2">
+            <h3 className="text-left text-lg font-semibold text-balance text-neutral-800 dark:text-neutral-200">
+              How to create a bento grid with Tailwind
+            </h3>
+            <p className="mt-2 text-left text-sm text-neutral-600 dark:text-neutral-400">
+              Learn how to create a bento grid with Tailwind CSS, Next.js and
+              Framer Motion.
+            </p>
+          </div>
+        </Card>
+      </NoiseBackground>
+    </div>
+  );
+}
 
-Contrast comes from opacity difference, not color
-
-Elevation is soft and atmospheric
-
-There is no visual noise
-
-It feels like modern hardware UI or high end SaaS design.
+const Card = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <div
+      className={cn(
+        "flex h-full min-h-80 flex-col overflow-hidden rounded-lg bg-white text-center dark:bg-neutral-800",
+        className,
+      )}
+    >
+      {children}
+    </div>
+  );
+};

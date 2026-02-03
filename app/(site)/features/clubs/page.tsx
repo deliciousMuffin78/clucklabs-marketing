@@ -19,6 +19,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import MeshGradient from "@/components/Common/MeshGradient";
+import { NoiseBackground } from "@/components/ui/noise-background";
 
 // export const metadata = {
 //   title: "Clubs & Communities | Cluck",
@@ -107,11 +108,11 @@ export default function ClubsPage() {
       </section>
 
       {/* Features Grid Section */}
-      <section className="bg-white py-20 lg:py-32 dark:bg-black">
+      <section className="py-20 lg:py-32">
         <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           {/* Section Header */}
           <div className="mx-auto mb-16 max-w-[900px] text-center md:mb-24">
-            <h4 className="text-primary mb-4 text-lg font-semibold tracking-[4px] uppercase">
+            <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
               EVERYTHING YOUR CLUB NEEDS
             </h4>
             <h2 className="text-primary mb-6 text-2xl leading-[1.2] font-bold md:text-3xl lg:text-4xl">
@@ -124,29 +125,51 @@ export default function ClubsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-10 lg:gap-15">
+          <div className="relative z-1 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-10 lg:gap-11">
+            <div className="absolute -top-1/2 right-0 left-0 -z-1 mx-auto h-full w-full opacity-80">
+              <Image
+                width={1200}
+                height={400}
+                src="/images/shape/shape-dotted-light.svg"
+                alt="Dotted"
+                className="dark:hidden"
+              />
+              <Image
+                fill
+                src="/images/shape/shape-dotted-dark.svg"
+                alt="Dotted"
+                className="hidden dark:block"
+              />
+            </div>
             {clubFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="border-stroke dark:border-strokedark dark:bg-blacksection flex flex-col rounded-[24px] border bg-white p-8 md:border-0 md:bg-transparent md:p-0 md:dark:bg-transparent"
-              >
-                <div className="mb-6 flex items-center gap-3">
-                  <span className="text-primary">{feature.icon}</span>
-                  <h3 className="text-xl font-bold tracking-wider text-black uppercase dark:text-white">
-                    {feature.title}
-                  </h3>
-                </div>
-                <ul className="flex flex-col gap-4">
-                  {feature.items.map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="text-waterloo dark:text-manatee flex items-center gap-3 text-lg"
-                    >
-                      <span className="bg-primary/40 h-1.5 w-1.5 rounded-full" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+              <div key={index} className="md:flex-1">
+                <NoiseBackground
+                  gradientColors={["#b4dcff", "#ffffff", "#f0d2ff"]}
+                  noiseIntensity={0.1}
+                  speed={0.05}
+                  containerClassName="rounded-[32px] p-[10px] shadow-sm"
+                  className="h-full"
+                >
+                  <div className="dark:bg-blacksection flex h-full flex-col rounded-[22px] bg-white p-8">
+                    <div className="mb-6 flex items-center gap-3">
+                      <span className="text-primary">{feature.icon}</span>
+                      <h3 className="text-xl font-bold tracking-wider text-black uppercase dark:text-white">
+                        {feature.title}
+                      </h3>
+                    </div>
+                    <ul className="flex flex-col gap-4">
+                      {feature.items.map((item, idx) => (
+                        <li
+                          key={idx}
+                          className="text-waterloo dark:text-manatee flex items-center gap-3 text-lg"
+                        >
+                          <span className="bg-primary/40 h-1.5 w-1.5 rounded-full" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </NoiseBackground>
               </div>
             ))}
           </div>
@@ -154,26 +177,22 @@ export default function ClubsPage() {
       </section>
 
       {/* Modern Club Management Section (Copied from About Design) */}
-      <section className="overflow-hidden bg-white pb-20 lg:pb-32 dark:bg-black">
+      <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/about/about-light-01.png"
+                src="/images/features/clubs-dashboard.avif"
                 alt="Modern Club Management"
-                className="object-contain dark:hidden"
                 fill
-              />
-              <Image
-                src="/images/about/about-dark-01.png"
-                alt="Modern Club Management"
-                className="hidden object-contain dark:block"
-                fill
+                className="object-contain"
+                priority
+                unoptimized
               />
             </div>
 
             <div className="md:w-1/2">
-              <h4 className="text-primary mb-4 text-lg font-semibold tracking-[4px] uppercase">
+              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
                 EARN WITHOUT SELLING OUT
               </h4>
               <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
@@ -244,26 +263,22 @@ export default function ClubsPage() {
       </section>
 
       {/* Rewards & Sponsors Section (Flipped Design) */}
-      <section className="overflow-hidden bg-white pb-20 lg:pb-32 dark:bg-black">
+      <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/about/about-light-02.svg"
+                src="/images/features/sponsors.avif"
                 alt="Rewards & Sponsors"
-                className="object-contain dark:hidden"
                 fill
-              />
-              <Image
-                src="/images/about/about-dark-02.svg"
-                alt="Rewards & Sponsors"
-                className="hidden object-contain dark:block"
-                fill
+                className="object-contain"
+                priority
+                unoptimized
               />
             </div>
 
             <div className="md:w-1/2">
-              <h4 className="text-primary mb-4 text-lg font-semibold tracking-[4px] uppercase">
+              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
                 REWARDS THAT DRIVE SHOWING UP
               </h4>
               <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
@@ -336,26 +351,22 @@ export default function ClubsPage() {
       </section>
 
       {/* Purpose + Progress Section (Image Left) */}
-      <section className="overflow-hidden bg-white pb-20 lg:pb-32 dark:bg-black">
+      <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/about/about-light-01.png"
+                src="/images/features/leaderboard.avif"
                 alt="Purpose + Progress"
-                className="object-contain dark:hidden"
                 fill
-              />
-              <Image
-                src="/images/about/about-dark-01.png"
-                alt="Purpose + Progress"
-                className="hidden object-contain dark:block"
-                fill
+                className="object-contain"
+                priority
+                unoptimized
               />
             </div>
 
             <div className="md:w-1/2">
-              <h4 className="text-primary mb-4 text-lg font-semibold tracking-[4px] uppercase">
+              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
                 PURPOSE + PROGRESS POWERED BY MEMBER MOVEMENT
               </h4>
               <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
@@ -453,26 +464,22 @@ export default function ClubsPage() {
       </section>
 
       {/* Add Pros Section (Image Right) */}
-      <section className="overflow-hidden bg-white pb-20 lg:pb-32 dark:bg-black">
+      <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/about/about-light-02.svg"
+                src="/images/features/pro-clinic.avif"
                 alt="Add Pros"
-                className="object-contain dark:hidden"
                 fill
-              />
-              <Image
-                src="/images/about/about-dark-02.svg"
-                alt="Add Pros"
-                className="hidden object-contain dark:block"
-                fill
+                className="object-contain"
+                priority
+                unoptimized
               />
             </div>
 
             <div className="md:w-1/2">
-              <h4 className="text-primary mb-4 text-lg font-semibold tracking-[4px] uppercase">
+              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
                 ADD PROS WITHOUT ADDING PAYROLL
               </h4>
               <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
@@ -555,26 +562,22 @@ export default function ClubsPage() {
       </section>
 
       {/* Local feel, global reach Section (Image Left) */}
-      <section className="overflow-hidden bg-white pb-20 lg:pb-32 dark:bg-black">
+      <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/about/about-light-01.png"
+                src="/images/features/lifestyle.avif"
                 alt="Local feel, global reach"
-                className="object-contain dark:hidden"
                 fill
-              />
-              <Image
-                src="/images/about/about-dark-01.png"
-                alt="Local feel, global reach"
-                className="hidden object-contain dark:block"
-                fill
+                className="object-contain"
+                priority
+                unoptimized
               />
             </div>
 
             <div className="md:w-1/2">
-              <h4 className="text-primary mb-4 text-lg font-semibold tracking-[4px] uppercase">
+              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
                 LOCAL FEEL, GLOBAL REACH
               </h4>
               <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
@@ -659,26 +662,22 @@ export default function ClubsPage() {
       </section>
 
       {/* Better for them, too Section (Image Right) */}
-      <section className="overflow-hidden bg-white pb-20 lg:pb-32 dark:bg-black">
+      <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/about/about-light-02.svg"
+                src="/images/features/members.avif"
                 alt="Better for them, too"
-                className="object-contain dark:hidden"
                 fill
-              />
-              <Image
-                src="/images/about/about-dark-02.svg"
-                alt="Better for them, too"
-                className="hidden object-contain dark:block"
-                fill
+                className="object-contain"
+                priority
+                unoptimized
               />
             </div>
 
             <div className="md:w-1/2">
-              <h4 className="text-primary mb-4 text-lg font-semibold tracking-[4px] uppercase">
+              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
                 BETTER FOR THEM, TOO
               </h4>
               <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">

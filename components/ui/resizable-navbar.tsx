@@ -50,7 +50,7 @@ interface MobileNavMenuProps {
 }
 
 /**
- * The main wrapper for the Navbar. 
+ * The main wrapper for the Navbar.
  * Listens to scroll events and passes the 'visible' state to its children.
  */
 export const Navbar = ({ children, className }: NavbarProps) => {
@@ -75,9 +75,9 @@ export const Navbar = ({ children, className }: NavbarProps) => {
         React.isValidElement(child)
           ? React.cloneElement(
               child as React.ReactElement<{ visible?: boolean }>,
-              { visible }
+              { visible },
             )
-          : child
+          : child,
       )}
     </motion.div>
   );
@@ -101,11 +101,11 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
       }}
       style={{ transformOrigin: "center" }}
       className={cn(
-        "relative mx-auto hidden lg:flex flex-row items-center justify-between rounded-full border border-transparent py-4 px-10 w-full transition-colors duration-500",
-        visible 
-          ? "bg-white/80 border-stroke dark:bg-[#000000]/80 dark:border-strokedark" 
-          : "bg-transparent border-transparent",
-        className
+        "relative mx-auto hidden w-full flex-row items-center justify-between rounded-full border border-transparent px-10 py-4 transition-colors duration-500 lg:flex",
+        visible
+          ? "border-stroke dark:border-strokedark bg-white/80 dark:bg-[#000000]/80"
+          : "border-transparent bg-transparent",
+        className,
       )}
     >
       {children}
@@ -120,15 +120,15 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "flex flex-row items-center justify-center gap-2 text-[17px] font-medium shrink-0",
-        className
+        "flex shrink-0 flex-row items-center justify-center gap-2 text-[17px] font-medium",
+        className,
       )}
     >
       {items.map((item, idx) => (
         <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-black dark:text-white shrink-0"
+          className="relative shrink-0 px-4 py-2 text-black dark:text-white"
           key={`link-${idx}`}
           href={item.link}
         >
@@ -140,7 +140,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
                 layout: {
                   duration: 0.2,
                   ease: "easeOut",
-                }
+                },
               }}
             />
           )}
@@ -157,9 +157,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       initial={false}
       animate={{
         backdropFilter: visible ? "blur(12px)" : "blur(0px)",
-        boxShadow: visible
-          ? "0 0 24px rgba(0, 0, 0, 0.08)"
-          : "none",
+        boxShadow: visible ? "0 0 24px rgba(0, 0, 0, 0.08)" : "none",
         scale: visible ? 0.95 : 1,
       }}
       transition={{
@@ -169,11 +167,11 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       }}
       style={{ transformOrigin: "center" }}
       className={cn(
-        "relative mx-auto flex flex-col items-center justify-between px-4 py-3 lg:hidden transition-colors duration-500 rounded-2xl border border-transparent w-full",
-        visible 
-          ? "bg-white/80 border-stroke dark:bg-[#000000]/80 dark:border-strokedark" 
-          : "bg-transparent border-transparent",
-        className
+        "relative mx-auto flex w-full flex-col items-center justify-between rounded-2xl border border-transparent px-4 py-3 transition-colors duration-500 lg:hidden",
+        visible
+          ? "border-stroke dark:border-strokedark bg-white/80 dark:bg-[#000000]/80"
+          : "border-transparent bg-transparent",
+        className,
       )}
     >
       {children}
@@ -181,13 +179,25 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
   );
 };
 
-export const MobileNavHeader = ({ children, className }: MobileNavHeaderProps) => (
-  <div className={cn("flex w-full flex-row items-center justify-between", className)}>
+export const MobileNavHeader = ({
+  children,
+  className,
+}: MobileNavHeaderProps) => (
+  <div
+    className={cn(
+      "flex w-full flex-row items-center justify-between",
+      className,
+    )}
+  >
     {children}
   </div>
 );
 
-export const MobileNavMenu = ({ children, className, isOpen }: MobileNavMenuProps) => (
+export const MobileNavMenu = ({
+  children,
+  className,
+  isOpen,
+}: MobileNavMenuProps) => (
   <AnimatePresence>
     {isOpen && (
       <motion.div
@@ -195,8 +205,8 @@ export const MobileNavMenu = ({ children, className, isOpen }: MobileNavMenuProp
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         className={cn(
-          "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-xl bg-white p-6 shadow-xl dark:bg-black border border-stroke dark:border-strokedark",
-          className
+          "border-stroke dark:border-strokedark absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-xl border bg-white p-6 shadow-xl dark:bg-black",
+          className,
         )}
       >
         {children}
@@ -205,7 +215,13 @@ export const MobileNavMenu = ({ children, className, isOpen }: MobileNavMenuProp
   </AnimatePresence>
 );
 
-export const MobileNavToggle = ({ isOpen, onClick }: { isOpen: boolean; onClick: () => void }) => (
+export const MobileNavToggle = ({
+  isOpen,
+  onClick,
+}: {
+  isOpen: boolean;
+  onClick: () => void;
+}) => (
   <button onClick={onClick} className="p-2 text-black dark:text-white">
     {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
   </button>
@@ -224,17 +240,24 @@ export const NavbarButton = ({
   children: React.ReactNode;
   className?: string;
   variant?: "primary" | "secondary" | "dark" | "gradient";
-} & React.AnchorHTMLAttributes<HTMLAnchorElement> & React.ButtonHTMLAttributes<HTMLButtonElement>) => {
-  const baseStyles = "px-6 py-2 rounded-full text-sm font-medium transition duration-200 inline-block text-center";
+} & React.AnchorHTMLAttributes<HTMLAnchorElement> &
+  React.ButtonHTMLAttributes<HTMLButtonElement>) => {
+  const baseStyles =
+    "px-6 py-2 rounded-full text-sm font-medium transition duration-200 inline-block text-center";
   const variants = {
     primary: "bg-primary text-white hover:bg-primary/90",
-    secondary: "bg-transparent text-black dark:text-white border border-stroke dark:border-strokedark",
+    secondary:
+      "bg-transparent text-black dark:text-white border border-stroke dark:border-strokedark",
     dark: "bg-black text-white dark:bg-white dark:text-black",
     gradient: "bg-gradient-to-r from-blue-600 to-indigo-600 text-white",
   };
 
   return (
-    <Tag href={href} className={cn(baseStyles, variants[variant], className)} {...props}>
+    <Tag
+      href={href}
+      className={cn(baseStyles, variants[variant], className)}
+      {...props}
+    >
       {children}
     </Tag>
   );

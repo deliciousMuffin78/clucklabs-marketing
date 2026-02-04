@@ -446,7 +446,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/clubs-dashboard.avif"
+                src="/images/features/how-it-works.avif"
                 alt="Modern Club Management"
                 fill
                 className="object-contain"
@@ -518,7 +518,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/sponsors.avif"
+                src="/images/features/why-it-works.avif"
                 alt="Rewards & Sponsors"
                 fill
                 className="object-contain"

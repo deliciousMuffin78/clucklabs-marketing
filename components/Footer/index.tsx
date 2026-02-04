@@ -2,13 +2,50 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { signup } from "@/lib/signup";
+import { usePathname } from "next/navigation";
+import { toast } from "react-hot-toast";
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
+    "idle",
+  );
+  const pathname = usePathname();
 
   useEffect(() => {
     setYear(new Date().getFullYear());
   }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setStatus("loading");
+    try {
+      // Clean up path name for the source tag
+      const pageName = pathname === "/" ? "homepage" : pathname.split("/").pop();
+
+      await signup({
+        email,
+        interests: ["newsletter"],
+        source: `clucklabs - newsletter - ${pageName}`,
+      });
+      setStatus("success");
+      setEmail("");
+      toast.success("Subscribed to newsletter!");
+    } catch (error) {
+      console.error("Newsletter error:", error);
+      setStatus("error");
+      toast.error("Failed to subscribe. Please try again.");
+    } finally {
+      // Reset status after a delay if success
+      if (status === "success") {
+        setTimeout(() => setStatus("idle"), 3000);
+      }
+    }
+  };
 
   return (
     <>
@@ -177,37 +214,47 @@ const Footer = () => {
                     <h4 className="mb-4 text-xl font-medium text-black dark:text-white">
                       Be first to know
                     </h4>
-                    <form action="#">
-                      <div className="relative">
+                    <form onSubmit={handleSubmit}>
+                      <div className="relative flex items-center">
                         <input
-                          type="text"
+                          type="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                           placeholder="Email address"
+                          required
+                          disabled={status === "loading"}
                           className="border-stroke shadow-solid-11 focus:border-primary dark:border-strokedark dark:focus:border-primary w-full rounded-full border px-6 py-2.5 text-lg focus:outline-hidden dark:bg-black dark:shadow-none"
                         />
                         <button
+                          type="submit"
+                          disabled={status === "loading"}
                           aria-label="signup to newsletter"
-                          className="absolute right-0 p-3"
+                          className="absolute right-0 flex h-full items-center justify-center px-4 transition-all duration-300 disabled:opacity-50"
                         >
-                          <svg
-                            className="hover:fill-primary fill-[#757693] dark:fill-white"
-                            width="18"
-                            height="18"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <g clipPath="url(#clip0_48_1487)">
-                              <path
-                                d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
-                                fill=""
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_48_1487">
-                                <rect width="20" height="20" fill="white" />
-                              </clipPath>
-                            </defs>
-                          </svg>
+                          {status === "loading" ? (
+                            <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+                          ) : (
+                            <svg
+                              className="hover:fill-primary fill-[#757693] dark:fill-white"
+                              width="18"
+                              height="18"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clipPath="url(#clip0_48_1487)">
+                                <path
+                                  d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
+                                  fill=""
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_48_1487">
+                                  <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          )}
                         </button>
                       </div>
                     </form>

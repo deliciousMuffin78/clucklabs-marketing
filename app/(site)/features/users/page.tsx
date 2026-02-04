@@ -302,12 +302,15 @@ export default function UsersPage() {
             </p>
 
             <div className="flex w-full justify-center">
-              <SignupForm
-                ctaText="Get Early Access"
-                description="Early access invites. No pressure. No spam."
-                showInterests={false}
-                pageName="user"
-              />
+              <div className="rounded-[40px] border border-white/20 bg-white/10 p-4 backdrop-blur-sm md:p-6 lg:p-8">
+                <SignupForm
+                  ctaText="Get Early Access"
+                  description="Early access invites. No pressure. No spam."
+                  showInterests={false}
+                  pageName="user"
+                  descriptionClassName="text-white/70"
+                />
+              </div>
             </div>
           </div>
         </div>

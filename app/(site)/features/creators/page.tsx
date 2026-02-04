@@ -100,10 +100,12 @@ export default function CreatorsPage() {
               Free. Cluck earns when you do.
             </p>
 
-            <div className="flex flex-col items-center gap-6">
-              <button className="bg-primary hover:bg-primaryho flex items-center justify-center rounded-full px-10 py-4 text-lg font-medium text-white shadow-xl transition-all duration-300">
-                Monetize my community
-              </button>
+            <div className="rounded-[40px] border border-black/7 bg-black/7 p-4 backdrop-blur-sm md:p-6 lg:p-8">
+              <SignupForm
+                pageName="creators"
+                showInterests={false}
+                descriptionClassName="text-primary/70"
+              />
             </div>
           </div>
         </div>

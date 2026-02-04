@@ -1,10 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import {
-  CheckCircle2,
-  Smartphone,
   Activity,
   Users,
   Link2,
@@ -12,16 +9,24 @@ import {
   Zap,
   Sparkles,
   Award,
+  Dumbbell,
+  Utensils,
+  Heart,
+  Moon,
+  Share2,
+  MessageSquare,
+  Calendar,
+  Trophy,
+  TrendingUp,
+  Video,
+  CreditCard,
+  Camera,
+  Gift,
 } from "lucide-react";
 import MeshGradient from "@/components/Common/MeshGradient";
+import SignupForm from "@/components/Common/SignupForm";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-  };
-
   return (
     <main className="relative overflow-hidden">
       <MeshGradient />
@@ -52,27 +57,16 @@ export default function Home() {
               overthinking.
             </p>
 
-            <div className="flex flex-col items-center gap-6">
-              <form onSubmit={handleSubmit} className="w-full max-w-[500px]">
-                <div className="flex flex-col gap-4 sm:flex-row">
-                  <input
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    type="email"
-                    placeholder="Enter your email"
-                    className="focus:border-primary flex-1 rounded-full border border-white/20 bg-white/10 px-6 py-4 text-white backdrop-blur-md placeholder:text-white/60 focus:outline-hidden"
-                  />
-                  <button
-                    type="submit"
-                    className="bg-primary hover:bg-primaryho flex items-center justify-center rounded-full px-10 py-4 text-lg font-medium whitespace-nowrap text-white shadow-xl transition-all duration-300"
-                  >
-                    Get Early Access
-                  </button>
-                </div>
-              </form>
-              <p className="text-sm font-medium tracking-wide text-white/70 uppercase">
-                Early access invites. No pressure. No spam.
-              </p>
+            <div className="flex w-full justify-center">
+              <div className="rounded-[40px] border border-white/20 bg-white/10 p-4 backdrop-blur-sm md:p-6 lg:p-8">
+                <SignupForm
+                  ctaText="Get Early Access"
+                  description="Early access invites. No pressure. No spam."
+                  showInterests={false}
+                  pageName="homepage"
+                  descriptionClassName="text-white/70"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -91,26 +85,70 @@ export default function Home() {
             {/* Row 1: Single Container */}
             <div className="w-full">
               <div className="rounded-[48px] border border-white/20 bg-white/30 p-4 shadow-lg backdrop-blur-xl md:p-6 dark:bg-white/5">
-                <div className="dark:bg-blacksection relative z-10 rounded-[32px] bg-white px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20">
-                  <h4 className="bg-zumthor text-primary mb-2 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                <div
+                  className="relative z-10 flex flex-col overflow-hidden rounded-[32px] px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20"
+                  style={{
+                    backgroundColor: "#1884be",
+                    backgroundImage: `
+                      radial-gradient(
+                        circle at 50% 0%,
+                        rgba(255,255,255,0.40) 0%,
+                        rgba(255,255,255,0.35) 12%,
+                        rgba(255,255,255,0.25) 12.5%,
+                        rgba(255,255,255,0.25) 24%,
+                        rgba(255,255,255,0.18) 24.5%,
+                        rgba(255,255,255,0.18) 36%,
+                        rgba(255,255,255,0.12) 36.5%,
+                        rgba(255,255,255,0.12) 48%,
+                        rgba(255,255,255,0.06) 48.5%,
+                        rgba(255,255,255,0.06) 60%,
+                        rgba(255,255,255,0) 60.5%
+                      )
+                    `,
+                    backgroundSize: "100% 100%",
+                    backgroundPosition: "top",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#1884be] uppercase">
                     INDIVIDUALS | MEMBERS
                   </h4>
-                  <p className="text-primary mb-4 text-sm font-bold tracking-widest uppercase">
-                    For you
-                  </p>
-                  <h2 className="mb-6 text-3xl font-bold text-black md:text-4xl lg:text-5xl dark:text-white">
+                  <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
                     Your next step, made obvious.
                   </h2>
-                  <p className="text-waterloo dark:text-manatee mx-auto mb-10 text-lg md:w-4/5 md:text-xl lg:w-3/5">
+                  <p className="mx-auto mb-10 text-lg text-white/90 md:w-4/5 md:text-xl lg:w-3/5">
                     Train, eat, sleep, recover, repeat. Cluck connects fitness,
                     nutrition, wellbeing, and community so your plan reacts to
                     your signals, not your willpower.
                   </p>
+
+                  <div className="mb-10 flex flex-wrap justify-center gap-5">
+                    {[
+                      { Icon: Activity, color: "#dc6069" },
+                      { Icon: Dumbbell, color: "#ed8130" },
+                      { Icon: Utensils, color: "#5f9d53" },
+                      { Icon: Heart, color: "#ec4899" },
+                      { Icon: Moon, color: "#27587a" },
+                      { Icon: Share2, color: "#a855f7" },
+                    ].map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="flex h-11 w-11 items-center justify-center rounded-full bg-white"
+                      >
+                        <item.Icon
+                          size={22}
+                          strokeWidth={2.5}
+                          style={{ color: item.color }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+
                   <a
                     href="/features/users"
-                    className="bg-primary hover:bg-primaryho inline-block rounded-full px-40 py-5.5 text-lg font-medium text-white shadow-lg transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
                   >
-                    Learn more
+                    See details
                   </a>
                 </div>
               </div>
@@ -119,51 +157,139 @@ export default function Home() {
             {/* Row 2: Two Containers */}
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div className="rounded-[48px] border border-white/20 bg-white/30 p-4 shadow-md backdrop-blur-xl md:p-6 dark:bg-white/5">
-                <div className="dark:bg-blacksection relative z-10 flex h-full flex-col rounded-[32px] bg-white px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20">
-                  <h4 className="bg-zumthor text-primary mb-2 inline-block self-center rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                <div
+                  className="relative z-10 flex h-full flex-col overflow-hidden rounded-[32px] px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20"
+                  style={{
+                    backgroundColor: "#f05a28",
+                    backgroundImage: `
+                      radial-gradient(
+                        circle at 50% 0%,
+                        rgba(255,255,255,0.40) 0%,
+                        rgba(255,255,255,0.35) 12%,
+                        rgba(255,255,255,0.25) 12.5%,
+                        rgba(255,255,255,0.25) 24%,
+                        rgba(255,255,255,0.18) 24.5%,
+                        rgba(255,255,255,0.18) 36%,
+                        rgba(255,255,255,0.12) 36.5%,
+                        rgba(255,255,255,0.12) 48%,
+                        rgba(255,255,255,0.06) 48.5%,
+                        rgba(255,255,255,0.06) 60%,
+                        rgba(255,255,255,0) 60.5%
+                      )
+                    `,
+                    backgroundSize: "100% 100%",
+                    backgroundPosition: "top",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#f05a28] uppercase">
                     CLUBS
                   </h4>
-                  <p className="text-primary mb-4 text-sm font-bold tracking-widest uppercase">
-                    Run the community
-                  </p>
-                  <h2 className="mb-6 text-2xl font-bold text-black md:text-3xl dark:text-white">
+                  <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
                     Turn a meetup into a movement.
                   </h2>
-                  <p className="text-waterloo dark:text-manatee mb-10 flex-1 text-lg">
+                  <p className="mb-10 flex-1 text-lg text-white/90">
                     Chat, posts, announcements, events, memberships, challenges,
                     leaderboards, and payouts in one place, so your club grows
                     without noisy feeds or admin overload.
                   </p>
+
+                  <div className="mb-10 flex flex-wrap justify-center gap-5">
+                    {[
+                      { Icon: MessageSquare, color: "#3b82f6" },
+                      { Icon: Share2, color: "#a855f7" },
+                      { Icon: Calendar, color: "#ec4899" },
+                      { Icon: Trophy, color: "#eab308" },
+                      { Icon: CreditCard, color: "#eab308" },
+                      { Icon: TrendingUp, color: "#10b981" },
+                    ].map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="flex h-11 w-11 items-center justify-center rounded-full bg-white"
+                      >
+                        <item.Icon
+                          size={22}
+                          strokeWidth={2.5}
+                          style={{ color: item.color }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+
                   <a
                     href="/features/clubs"
-                    className="bg-primary hover:bg-primaryho inline-block rounded-full px-10 py-5.5 text-lg font-medium text-white shadow-lg transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
                   >
-                    Learn more
+                    See details
                   </a>
                 </div>
               </div>
               <div className="rounded-[48px] border border-white/20 bg-white/30 p-4 shadow-md backdrop-blur-xl md:p-6 dark:bg-white/5">
-                <div className="dark:bg-blacksection relative z-10 flex h-full flex-col rounded-[32px] bg-white px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20">
-                  <h4 className="bg-zumthor text-primary mb-2 inline-block self-center rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                <div
+                  className="relative z-10 flex h-full flex-col overflow-hidden rounded-[32px] px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20"
+                  style={{
+                    backgroundColor: "#6b3fa0",
+                    backgroundImage: `
+                      radial-gradient(
+                        circle at 50% 0%,
+                        rgba(255,255,255,0.40) 0%,
+                        rgba(255,255,255,0.35) 12%,
+                        rgba(255,255,255,0.25) 12.5%,
+                        rgba(255,255,255,0.25) 24%,
+                        rgba(255,255,255,0.18) 24.5%,
+                        rgba(255,255,255,0.18) 36%,
+                        rgba(255,255,255,0.12) 36.5%,
+                        rgba(255,255,255,0.12) 48%,
+                        rgba(255,255,255,0.06) 48.5%,
+                        rgba(255,255,255,0.06) 60%,
+                        rgba(255,255,255,0) 60.5%
+                      )
+                    `,
+                    backgroundSize: "100% 100%",
+                    backgroundPosition: "top",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#6b3fa0] uppercase">
                     PROS
                   </h4>
-                  <p className="text-primary mb-4 text-sm font-bold tracking-widest uppercase">
-                    Coach with clarity
-                  </p>
-                  <h2 className="mb-6 text-2xl font-bold text-black md:text-3xl dark:text-white">
+                  <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
                     Coach in real time, <br />
                     not after the fact.
                   </h2>
-                  <p className="text-waterloo dark:text-manatee mb-10 flex-1 text-lg">
+                  <p className="mb-10 flex-1 text-lg text-white/90">
                     Run 1:1 or groups with optional live streaming data during
                     sessions, sell plans at scale, and get discovered for
                     results, not followers.
                   </p>
+
+                  <div className="mb-10 flex flex-wrap justify-center gap-5">
+                    {[
+                      { Icon: Video, color: "#dc6069" },
+                      { Icon: MessageSquare, color: "#3b82f6" },
+                      { Icon: Dumbbell, color: "#ed8130" },
+                      { Icon: Utensils, color: "#5f9d53" },
+                      { Icon: TrendingUp, color: "#10b981" },
+                      { Icon: CreditCard, color: "#eab308" },
+                    ].map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="flex h-11 w-11 items-center justify-center rounded-full bg-white"
+                      >
+                        <item.Icon
+                          size={22}
+                          strokeWidth={2.5}
+                          style={{ color: item.color }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+
                   <a
                     href="/features/pros"
-                    className="bg-primary hover:bg-primaryho inline-block rounded-full px-10 py-5.5 text-lg font-medium text-white shadow-lg transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
                   >
-                    Learn more
+                    See details
                   </a>
                 </div>
               </div>
@@ -172,50 +298,140 @@ export default function Home() {
             {/* Row 3: Two Containers */}
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div className="rounded-[48px] border border-white/20 bg-white/30 p-4 shadow-md backdrop-blur-xl md:p-6 dark:bg-white/5">
-                <div className="dark:bg-blacksection relative z-10 flex h-full flex-col rounded-[32px] bg-white px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20">
-                  <h4 className="bg-zumthor text-primary mb-2 inline-block self-center rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                <div
+                  className="relative z-10 flex h-full flex-col overflow-hidden rounded-[32px] px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20"
+                  style={{
+                    backgroundColor: "#d11764",
+                    backgroundImage: `
+                      radial-gradient(
+                        circle at 50% 0%,
+                        rgba(255,255,255,0.40) 0%,
+                        rgba(255,255,255,0.35) 12%,
+                        rgba(255,255,255,0.25) 12.5%,
+                        rgba(255,255,255,0.25) 24%,
+                        rgba(255,255,255,0.18) 24.5%,
+                        rgba(255,255,255,0.18) 36%,
+                        rgba(255,255,255,0.12) 36.5%,
+                        rgba(255,255,255,0.12) 48%,
+                        rgba(255,255,255,0.06) 48.5%,
+                        rgba(255,255,255,0.06) 60%,
+                        rgba(255,255,255,0) 60.5%
+                      )
+                    `,
+                    backgroundSize: "100% 100%",
+                    backgroundPosition: "top",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#d11764] uppercase">
                     CREATORS
                   </h4>
-                  <p className="text-primary mb-4 text-sm font-bold tracking-widest uppercase">
-                    Make it pay
-                  </p>
-                  <h2 className="mb-6 text-2xl font-bold text-black md:text-3xl dark:text-white">
+                  <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
                     Turn one challenge into recurring income.
                   </h2>
-                  <p className="text-waterloo dark:text-manatee mb-10 flex-1 text-lg">
+                  <p className="mb-10 flex-1 text-lg text-white/90">
                     Launch paid challenges and programs with sponsor prizes,
                     create and schedule content in Cluck, and earn referrals for
                     up to 2 years while members stay focused.
                   </p>
+
+                  <div className="mb-10 flex flex-wrap justify-center gap-5">
+                    {[
+                      { Icon: Camera, color: "#dc6069" },
+                      { Icon: CreditCard, color: "#3b82f6" },
+                      { Icon: Calendar, color: "#ec4899" },
+                      { Icon: Gift, color: "#eab308" },
+                      { Icon: MessageSquare, color: "#a855f7" },
+                      { Icon: TrendingUp, color: "#10b981" },
+                    ].map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="flex h-11 w-11 items-center justify-center rounded-full bg-white"
+                      >
+                        <item.Icon
+                          size={22}
+                          strokeWidth={2.5}
+                          style={{ color: item.color }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+
                   <a
                     href="/features/creators"
-                    className="bg-primary hover:bg-primaryho inline-block rounded-full px-10 py-5.5 text-lg font-medium text-white shadow-lg transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
                   >
-                    Learn more
+                    See details
                   </a>
                 </div>
               </div>
               <div className="rounded-[48px] border border-white/20 bg-white/30 p-4 shadow-md backdrop-blur-xl md:p-6 dark:bg-white/5">
-                <div className="dark:bg-blacksection relative z-10 flex h-full flex-col rounded-[32px] bg-white px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20">
-                  <h4 className="bg-zumthor text-primary mb-2 inline-block self-center rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                    BRANDS | RETAILERS
+                <div
+                  className="relative z-10 flex h-full flex-col overflow-hidden rounded-[32px] px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20"
+                  style={{
+                    backgroundColor: "#3fa36c",
+                    backgroundImage: `
+                      radial-gradient(
+                        circle at 50% 0%,
+                        rgba(255,255,255,0.40) 0%,
+                        rgba(255,255,255,0.35) 12%,
+                        rgba(255,255,255,0.25) 12.5%,
+                        rgba(255,255,255,0.25) 24%,
+                        rgba(255,255,255,0.18) 24.5%,
+                        rgba(255,255,255,0.18) 36%,
+                        rgba(255,255,255,0.12) 36.5%,
+                        rgba(255,255,255,0.12) 48%,
+                        rgba(255,255,255,0.06) 48.5%,
+                        rgba(255,255,255,0.06) 60%,
+                        rgba(255,255,255,0) 60.5%
+                      )
+                    `,
+                    backgroundSize: "100% 100%",
+                    backgroundPosition: "top",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#3fa36c] uppercase">
+                    BRANDS
                   </h4>
-                  <p className="text-primary mb-4 text-sm font-bold tracking-widest uppercase">
-                    Pay for what works
-                  </p>
-                  <h2 className="mb-6 text-2xl font-bold text-black md:text-3xl dark:text-white">
-                    Turn incentives into foot traffic.
+                  <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
+                    Turn incentives
+                    <br />
+                    into foot traffic.
                   </h2>
-                  <p className="text-waterloo dark:text-manatee mb-10 flex-1 text-lg">
+                  <p className="mb-10 flex-1 text-lg text-white/90">
                     Fund rewards tied to participation and redemption, then
                     watch clubs, creators, and pros drive measurable action and
                     repeat customers.
                   </p>
+
+                  <div className="mb-10 flex flex-wrap justify-center gap-5">
+                    {[
+                      { Icon: Gift, color: "#dc6069" },
+                      { Icon: CreditCard, color: "#3b82f6" },
+                      { Icon: TrendingUp, color: "#10b981" },
+                      { Icon: MessageSquare, color: "#a855f7" },
+                      { Icon: Share2, color: "#ec4899" },
+                      { Icon: Heart, color: "#f43f5e" },
+                    ].map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="flex h-11 w-11 items-center justify-center rounded-full bg-white"
+                      >
+                        <item.Icon
+                          size={22}
+                          strokeWidth={2.5}
+                          style={{ color: item.color }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+
                   <a
                     href="/features/brands"
-                    className="bg-primary hover:bg-primaryho inline-block rounded-full px-10 py-5.5 text-lg font-medium text-white shadow-lg transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
                   >
-                    Learn more
+                    See details
                   </a>
                 </div>
               </div>
@@ -395,31 +611,18 @@ export default function Home() {
                 Ready to cluck?
               </h2>
               <p className="text-waterloo dark:text-manatee mx-auto mb-10 text-lg md:w-4/5 md:text-xl lg:w-3/5">
-                Get early access to Cluck and spend less time guessing, more
-                time feeling better, even when life isn’t perfect.
+                Get early access to Cluck and spend less time guessing. <br />
+                More time feeling better, even when life isn’t perfect.
               </p>
 
-              <div className="flex flex-col items-center gap-5">
-                <form onSubmit={handleSubmit} className="w-full max-w-[500px]">
-                  <div className="flex flex-col gap-4 sm:flex-row">
-                    <input
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      type="email"
-                      placeholder="Enter your email"
-                      className="border-stroke shadow-solid-2 focus:border-primary dark:border-strokedark dark:focus:border-primary flex-1 rounded-full border px-6 py-4 focus:outline-hidden dark:bg-black dark:shadow-none"
-                    />
-                    <button
-                      type="submit"
-                      className="bg-primary hover:bg-primaryho flex items-center justify-center rounded-full px-10 py-4 text-lg font-medium whitespace-nowrap text-white shadow-xl transition-all duration-300"
-                    >
-                      Get early access
-                    </button>
-                  </div>
-                </form>
-                <p className="text-primary text-sm font-medium tracking-wide uppercase">
-                  Early access invites. No pressure. No spam.
-                </p>
+              <div className="flex w-full justify-center">
+                <div className="w-full max-w-[650px]">
+                  <SignupForm
+                    ctaText="Get early access"
+                    description="Early access invites. No pressure. No spam."
+                    pageName="homepage"
+                  />
+                </div>
               </div>
             </div>
           </div>

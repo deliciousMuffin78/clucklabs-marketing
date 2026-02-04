@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import MeshGradient from "@/components/Common/MeshGradient";
 import { NoiseBackground } from "@/components/ui/noise-background";
+import SignupForm from "@/components/Common/SignupForm";
 
 // export const metadata = {
 //   title: "Clubs & Communities | Cluck",
@@ -63,12 +64,6 @@ const brandFeatures = [
 ];
 
 export default function BrandsPage() {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-  };
-
   return (
     <main>
       {/* Brands Hero */}
@@ -956,27 +951,14 @@ export default function BrandsPage() {
                 time feeling better, even when life isn’t perfect.
               </p>
 
-              <div className="flex flex-col items-center gap-5">
-                <form onSubmit={handleSubmit} className="w-full max-w-[500px]">
-                  <div className="flex flex-col gap-4 sm:flex-row">
-                    <input
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      type="email"
-                      placeholder="Enter your email"
-                      className="border-stroke shadow-solid-2 focus:border-primary dark:border-strokedark dark:focus:border-primary flex-1 rounded-full border px-6 py-4 focus:outline-hidden dark:bg-black dark:shadow-none"
-                    />
-                    <button
-                      type="submit"
-                      className="bg-primary hover:bg-primaryho flex items-center justify-center rounded-full px-10 py-4 text-lg font-medium whitespace-nowrap text-white shadow-xl transition-all duration-300"
-                    >
-                      Get early access
-                    </button>
-                  </div>
-                </form>
-                <p className="text-primary text-sm font-medium tracking-wide uppercase">
-                  Early access invites. No pressure. No spam.
-                </p>
+              <div className="flex w-full justify-center">
+                <div className="w-full max-w-[650px]">
+                  <SignupForm
+                    ctaText="Get early access"
+                    description="Early access invites. No pressure. No spam."
+                    pageName="brands"
+                  />
+                </div>
               </div>
             </div>
           </div>

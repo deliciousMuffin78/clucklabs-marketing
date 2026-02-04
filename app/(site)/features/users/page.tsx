@@ -18,6 +18,7 @@ import {
 import MeshGradient from "@/components/Common/MeshGradient";
 import { NoiseBackground } from "@/components/ui/noise-background";
 import { AnimatePresence } from "framer-motion";
+import SignupForm from "@/components/Common/SignupForm";
 
 // export const metadata = {
 //   title: "Clubs & Communities | Cluck",
@@ -270,12 +271,6 @@ const CluckActionRow = ({ action, index }: { action: any; index: number }) => {
 };
 
 export default function UsersPage() {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-  };
-
   return (
     <main>
       {/* User Hero */}
@@ -306,27 +301,13 @@ export default function UsersPage() {
               Don’t have a goal? Perfect.
             </p>
 
-            <div className="flex flex-col items-center gap-6">
-              <form onSubmit={handleSubmit} className="w-full max-w-[500px]">
-                <div className="flex flex-col gap-4 sm:flex-row">
-                  <input
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    type="email"
-                    placeholder="Enter your email"
-                    className="focus:border-primary flex-1 rounded-full border border-white/20 bg-white/10 px-6 py-4 text-white backdrop-blur-md placeholder:text-white/60 focus:outline-hidden"
-                  />
-                  <button
-                    type="submit"
-                    className="bg-primary hover:bg-primaryho flex items-center justify-center rounded-full px-10 py-4 text-lg font-medium whitespace-nowrap text-white shadow-xl transition-all duration-300"
-                  >
-                    Get Early Access
-                  </button>
-                </div>
-              </form>
-              <p className="text-sm font-medium tracking-wide text-white/70 uppercase">
-                Early access invites. No pressure. No spam.
-              </p>
+            <div className="flex w-full justify-center">
+              <SignupForm
+                ctaText="Get Early Access"
+                description="Early access invites. No pressure. No spam."
+                showInterests={false}
+                pageName="user"
+              />
             </div>
           </div>
         </div>
@@ -726,27 +707,14 @@ export default function UsersPage() {
                 time feeling better, even when life isn’t perfect.
               </p>
 
-              <div className="flex flex-col items-center gap-5">
-                <form onSubmit={handleSubmit} className="w-full max-w-[500px]">
-                  <div className="flex flex-col gap-4 sm:flex-row">
-                    <input
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      type="email"
-                      placeholder="Enter your email"
-                      className="border-stroke shadow-solid-2 focus:border-primary dark:border-strokedark dark:focus:border-primary flex-1 rounded-full border px-6 py-4 focus:outline-hidden dark:bg-black dark:shadow-none"
-                    />
-                    <button
-                      type="submit"
-                      className="bg-primary hover:bg-primaryho flex items-center justify-center rounded-full px-10 py-4 text-lg font-medium whitespace-nowrap text-white shadow-xl transition-all duration-300"
-                    >
-                      Get early access
-                    </button>
-                  </div>
-                </form>
-                <p className="text-primary text-sm font-medium tracking-wide uppercase">
-                  Early access invites. No pressure. No spam.
-                </p>
+              <div className="flex w-full justify-center">
+                <div className="w-full max-w-[650px]">
+                  <SignupForm
+                    ctaText="Get early access"
+                    description="Early access invites. No pressure. No spam."
+                    pageName="user"
+                  />
+                </div>
               </div>
             </div>
           </div>

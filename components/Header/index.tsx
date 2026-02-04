@@ -31,27 +31,26 @@ const Header = () => {
     <Navbar>
       {/* Desktop Navigation */}
       <NavBody>
-        <Link href="/" className="flex w-[100px] shrink-0 items-center">
+        <Link href="/" className="flex shrink-0 items-center">
           <Image
             src="/images/logo/logo-dark.png"
             alt="Cluck Logo"
-            width={100}
-            height={25}
-            className="hidden h-auto w-full dark:block"
+            width={140}
+            height={35}
+            className="hidden h-auto w-full max-w-[140px] dark:block"
           />
           <Image
             src="/images/logo/logo-light.png"
             alt="Cluck Logo"
-            width={100}
-            height={25}
-            className="h-auto w-full dark:hidden"
+            width={140}
+            height={35}
+            className="h-auto w-full max-w-[140px] dark:hidden"
           />
         </Link>
 
-        <NavItems items={mainNavItems} />
-
-        <div className="flex w-[100px] shrink-0 items-center justify-end gap-4">
-          {/* ThemeToggler removed */}
+        {/* This will push the nav items to the right */}
+        <div className="flex flex-1 justify-end">
+          <NavItems items={mainNavItems} />
         </div>
       </NavBody>
 
@@ -62,15 +61,15 @@ const Header = () => {
             <Image
               src="/images/logo/logo-dark.png"
               alt="Cluck Logo"
-              width={90}
-              height={22}
+              width={110}
+              height={28}
               className="hidden dark:block"
             />
             <Image
               src="/images/logo/logo-light.png"
               alt="Cluck Logo"
-              width={90}
-              height={22}
+              width={110}
+              height={28}
               className="dark:hidden"
             />
           </Link>

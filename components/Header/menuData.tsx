@@ -9,7 +9,7 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "Users",
+    title: "Individuals",
     newTab: false,
     path: "/features/users",
   },

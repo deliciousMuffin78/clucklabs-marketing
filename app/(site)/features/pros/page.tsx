@@ -123,7 +123,8 @@ export default function ProsPage() {
               EVERYTHING A PRO NEEDS
             </h4>
             <h2 className="text-primary mb-6 text-2xl leading-[1.2] font-bold md:text-3xl lg:text-4xl">
-              Everything in one place so coaching <br className="hidden md:block" />
+              Everything in one place so coaching{" "}
+              <br className="hidden md:block" />
               stays the work, not the workflow.
             </h2>
             <p className="text-waterloo dark:text-manatee text-xl leading-relaxed md:text-[1.4rem]">
@@ -902,13 +903,15 @@ export default function ProsPage() {
           <div className="rounded-[48px] border border-white/20 bg-white/30 p-4 shadow-2xl backdrop-blur-xl md:p-6 dark:bg-white/5">
             {/* Inner Container (The white surface) */}
             <div className="dark:bg-blacksection relative z-10 rounded-[32px] bg-white px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20">
+              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                EARLY ACCESS START NOW
+              </h4>
               <h2 className="mb-6 text-3xl font-bold text-black md:text-4xl lg:text-5xl dark:text-white">
-                Turn your expertise into a scalable machine.
+                Ready to cluck?
               </h2>
               <p className="text-waterloo dark:text-manatee mx-auto mb-10 text-lg md:w-4/5 md:text-xl lg:w-3/5">
-                Stop fighting with manual messages and multiple apps. Start
-                coaching with the tool built to help professional coaches grow
-                higher, faster, and better.
+                Get early access to Cluck and spend less time guessing, more
+                time feeling better, even when life isn’t perfect.
               </p>
 
               <div className="flex flex-col items-center gap-5">
@@ -925,12 +928,12 @@ export default function ProsPage() {
                       type="submit"
                       className="bg-primary hover:bg-primaryho flex items-center justify-center rounded-full px-10 py-4 text-lg font-medium whitespace-nowrap text-white shadow-xl transition-all duration-300"
                     >
-                      Start Coaching
+                      Get early access
                     </button>
                   </div>
                 </form>
                 <p className="text-primary text-sm font-medium tracking-wide uppercase">
-                  Launch in minutes. Scale for years.
+                  Early access invites. No pressure. No spam.
                 </p>
               </div>
             </div>

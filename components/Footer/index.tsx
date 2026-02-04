@@ -117,7 +117,7 @@ const Footer = () => {
                         href="/features/users"
                         className="hover:text-primary mb-3 inline-block"
                       >
-                        Users / Members
+                        Individuals | Members
                       </a>
                     </li>
                     <li>
@@ -125,7 +125,7 @@ const Footer = () => {
                         href="/features/clubs"
                         className="hover:text-primary mb-3 inline-block"
                       >
-                        Clubs / Communities
+                        Clubs | Communities
                       </a>
                     </li>
                     <li>
@@ -133,7 +133,7 @@ const Footer = () => {
                         href="/features/pros"
                         className="hover:text-primary mb-3 inline-block"
                       >
-                        Pros / Coaches
+                        Pros | Coaches
                       </a>
                     </li>
                     <li>
@@ -141,7 +141,7 @@ const Footer = () => {
                         href="/features/creators"
                         className="hover:text-primary mb-3 inline-block"
                       >
-                        Creators / Influencers
+                        Creators | Influencers
                       </a>
                     </li>
                     <li>
@@ -149,7 +149,7 @@ const Footer = () => {
                         href="/features/brands"
                         className="hover:text-primary mb-3 inline-block"
                       >
-                        Brands & Small Businesses
+                        Brands | Retailers
                       </a>
                     </li>
                   </ul>

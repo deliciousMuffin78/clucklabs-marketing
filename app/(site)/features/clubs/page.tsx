@@ -755,13 +755,15 @@ export default function ClubsPage() {
           <div className="rounded-[48px] border border-white/20 bg-white/30 p-4 shadow-2xl backdrop-blur-xl md:p-6 dark:bg-white/5">
             {/* Inner Container (The white surface) */}
             <div className="dark:bg-blacksection relative z-10 rounded-[32px] bg-white px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20">
+              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                EARLY ACCESS START NOW
+              </h4>
               <h2 className="mb-6 text-3xl font-bold text-black md:text-4xl lg:text-5xl dark:text-white">
-                Ready to bring your club into Cluck?
+                Ready to cluck?
               </h2>
               <p className="text-waterloo dark:text-manatee mx-auto mb-10 text-lg md:w-4/5 md:text-xl lg:w-3/5">
-                Create your club, invite your members, and start showing up
-                together—free to run from day one, with tools to grow, offer
-                more, and earn when it fits.
+                Get early access to Cluck and spend less time guessing, more
+                time feeling better, even when life isn’t perfect.
               </p>
 
               <div className="flex flex-col items-center gap-5">
@@ -778,12 +780,12 @@ export default function ClubsPage() {
                       type="submit"
                       className="bg-primary hover:bg-primaryho flex items-center justify-center rounded-full px-10 py-4 text-lg font-medium whitespace-nowrap text-white shadow-xl transition-all duration-300"
                     >
-                      Bring my club
+                      Get early access
                     </button>
                   </div>
                 </form>
                 <p className="text-primary text-sm font-medium tracking-wide uppercase">
-                  Free to run. Built for real life.
+                  Early access invites. No pressure. No spam.
                 </p>
               </div>
             </div>

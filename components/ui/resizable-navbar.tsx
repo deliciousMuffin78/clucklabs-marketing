@@ -92,7 +92,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         boxShadow: visible
           ? "0 0 24px rgba(0, 0, 0, 0.08), 0 1px 1px rgba(0, 0, 0, 0.05)"
           : "none",
-        maxWidth: visible ? "850px" : "1390px",
+        maxWidth: visible ? "900px" : "1390px",
       }}
       transition={{
         type: "spring",
@@ -101,10 +101,10 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
       }}
       style={{ transformOrigin: "center" }}
       className={cn(
-        "relative mx-auto hidden w-full flex-row items-center justify-between rounded-full border border-transparent px-10 py-4 transition-colors duration-500 lg:flex",
+        "relative mx-auto hidden w-full flex-row items-center justify-between rounded-full border border-transparent py-4 transition-all duration-500 lg:flex",
         visible
-          ? "border-stroke dark:border-strokedark bg-white/80 dark:bg-[#000000]/80"
-          : "border-transparent bg-transparent",
+          ? "border-stroke dark:border-strokedark bg-white/80 px-14 shadow-sm backdrop-blur-md dark:bg-black/80"
+          : "border-transparent bg-transparent px-10",
         className,
       )}
     >
@@ -120,7 +120,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "flex shrink-0 flex-row items-center justify-center gap-2 text-[17px] font-medium",
+        "flex shrink-0 flex-row items-center gap-2 text-[17px] font-medium",
         className,
       )}
     >

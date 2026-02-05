@@ -183,7 +183,7 @@ export default function CreatorsPage() {
       </section>
 
       {/* Modern Club Management Section (Copied from About Design) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-20 lg:pb-20">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -267,14 +267,14 @@ export default function CreatorsPage() {
         </div>
       </section>
 
-      {/* Rewards & Sponsors Section (Flipped Design) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      {/* Rewards & Sponsors Section */}
+      <section className="overflow-hidden pb-20 lg:pb-30">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
+          <div className="flex flex-col items-center gap-12">
+            <div className="relative mx-auto aspect-[588/526.5] w-full max-w-[800px]">
               <Image
                 src="/images/features/creators-run-the-business.avif"
-                alt="Rewards & Sponsors"
+                alt="More than one payday"
                 fill
                 className="object-contain"
                 priority
@@ -282,21 +282,23 @@ export default function CreatorsPage() {
               />
             </div>
 
-            <div className="md:w-1/2">
-              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                MORE THAN ONE PAYDAY
-              </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Earn from what your community does, not just what they watch.
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Cluck turns participation into durable income, so one moment of
-                attention can compound into long term value.
-              </p>
+            <div className="w-full max-w-[900px]">
+              <div className="mb-12 text-center">
+                <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                  MORE THAN ONE PAYDAY
+                </h4>
+                <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
+                  Earn from what your community does, not just what they watch.
+                </h2>
+                <p className="text-waterloo dark:text-manatee mx-auto max-w-[700px] text-lg">
+                  Cluck turns participation into durable income, so one moment
+                  of attention can compound into long term value.
+                </p>
+              </div>
 
-              <div className="flex flex-col gap-6">
+              <div className="grid grid-cols-1 gap-x-15 gap-y-8 md:grid-cols-2">
                 <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
                     <CheckCircle2 size={16} />
                   </div>
                   <div className="flex-1">
@@ -308,7 +310,7 @@ export default function CreatorsPage() {
                 </div>
 
                 <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
                     <CheckCircle2 size={16} />
                   </div>
                   <div className="flex-1">
@@ -320,7 +322,7 @@ export default function CreatorsPage() {
                 </div>
 
                 <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
                     <CheckCircle2 size={16} />
                   </div>
                   <div className="flex-1">
@@ -332,7 +334,7 @@ export default function CreatorsPage() {
                 </div>
 
                 <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
                     <CheckCircle2 size={16} />
                   </div>
                   <div className="flex-1">
@@ -343,7 +345,7 @@ export default function CreatorsPage() {
                 </div>
 
                 <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
                     <CheckCircle2 size={16} />
                   </div>
                   <div className="flex-1">
@@ -355,7 +357,7 @@ export default function CreatorsPage() {
                 </div>
 
                 <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
                     <CheckCircle2 size={16} />
                   </div>
                   <div className="flex-1">
@@ -367,7 +369,7 @@ export default function CreatorsPage() {
                 </div>
               </div>
 
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
+              <p className="mt-12 text-center text-lg font-medium text-black dark:text-white">
                 Durable earnings beat one-off posts.
               </p>
             </div>
@@ -573,7 +575,7 @@ export default function CreatorsPage() {
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/creators-run-the-business.avif"
+                src="/images/features/clubs-cockpit.avif"
                 alt="Run the business, not the scramble"
                 fill
                 className="object-contain"

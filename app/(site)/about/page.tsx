@@ -9,75 +9,178 @@ export default function AboutPage() {
   return (
     <main>
       {/* About Hero */}
-      <section className="relative overflow-hidden pt-35 pb-20 lg:pt-45 lg:pb-25">
+      <section className="relative overflow-hidden pt-50 pb-50 lg:pt-65 lg:pb-80">
         <MeshGradient />
         <div className="max-w-c-1315 relative z-10 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center text-center">
-            <h4 className="text-primary mb-4.5 text-lg font-medium tracking-[4px] uppercase">
-              ABOUT CLUCK
+          <div className="flex flex-col items-center">
+            <h4 className="text-primary mb-6 text-lg font-medium tracking-[4px] uppercase">
+              OUR STORY
             </h4>
-            <h1 className="mb-6 max-w-[900px] text-4xl leading-[1.1] font-bold text-black md:text-5xl lg:text-6xl dark:text-white">
-              It’s what you do.
+            <h1 className="max-w-[1100px] text-center text-4xl leading-[1.1] font-bold text-black md:text-5xl lg:text-6xl dark:text-white">
+              It Started at a <span className="text-primary">Run Club.</span>
             </h1>
-            <p className="text-waterloo dark:text-manatee mb-10 max-w-[800px] text-xl md:text-2xl">
-              Cluck is the connected wellness system for real-life sports
-              communities. We believe that movement should be social,
-              measurable, and rewarding.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="py-20 lg:py-25">
-        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-12 md:flex-row">
-            <div className="md:w-1/2">
-              <h2 className="mb-6 text-3xl font-bold text-black md:text-4xl dark:text-white">
-                Our Mission
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-6 text-lg">
-                We're building tools for the places people actually visit and
-                talk about. From local run clubs to neighborhood gyms and
-                regional brands, we help communities thrive by rewarding the
-                behaviors that matter.
+      {/* Story Content Section */}
+      <section className="pb-24 lg:pb-32">
+        <div className="max-w-c-1154 mx-auto px-4 md:px-8 xl:px-0">
+          {/* Top Story - Full Width */}
+          <div className="mb-16">
+            <div className="text-waterloo dark:text-manatee flex flex-col gap-8 text-xl leading-relaxed md:text-xl">
+              <p>Hi, I am Travis.</p>
+              <p>
+                I moved to West Hollywood in 2024 and joined a run club because
+                I was looking for people. Community. Fun. A reason to show up.
+                <br />
+                That first run with West Hollywood Run Club was phenomenal. Not
+                because of pace or performance, but because of the energy. No
+                pressure. No egos. Just people showing up, moving their bodies,
+                laughing, sweating, and genuinely enjoying being there. <br />
+                What I loved most was how simple it felt. Everyone belonged. All
+                paces were welcome. Some days you push it. Some days you take it
+                easy. Most of the time, you are out there because it feels good
+                to move together. That mattered to me.
               </p>
-              <div className="flex flex-col gap-4">
-                {[
-                  "Verified participation that builds trust",
-                  "Rewards that drive real-world action",
-                  "Communities that show up and repeat",
-                  "Tools that scale without the workload",
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-4">
-                    <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                      <CheckCircle2 size={16} />
-                    </div>
-                    <p className="text-waterloo dark:text-manatee text-lg">
-                      {item}
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-12 text-lg md:flex-row md:items-start md:gap-20">
+            <div className="flex flex-col gap-10 md:w-1/2">
+              <div className="text-waterloo dark:text-manatee flex flex-col gap-6 text-[1.2rem] leading-relaxed">
+                <p>
+                  Outside the runs, I started to notice how scattered everything
+                  felt. People shared moments on Instagram. Conversations lived
+                  in group texts. Workouts were tracked in different apps. But
+                  there was no single place to actually belong. No space that
+                  brought it all together, whether you were moving with others
+                  or doing your own thing.
+                </p>
+                <p>
+                  I run. I train. I work out. But fitness is not just part of my
+                  life. It is something I share.
+                </p>
+                <p>
+                  That became even more clear through my sister, Ashley. She is
+                  disabled and new here, and helping her stay active has been
+                  one of the most meaningful parts of my life. Since moving
+                  here, she walks more, takes fitness classes, and genuinely
+                  loves seeing her progress. Counting her miles. Feeling proud
+                  of what her body can do. Being part of something.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-10 md:w-1/2">
+              <div className="text-waterloo dark:text-manatee flex flex-col gap-6 text-[1.2rem] leading-relaxed">
+                <p>
+                  She deserves a place in fitness. So do people like her. As I
+                  looked closer, the gap was everywhere.
+                </p>
+                <p>
+                  Run club leaders had no real tools to support their
+                  communities. Creators had audiences, but no true home. Pros
+                  were incredible, but hard to discover unless you already knew
+                  where to look. And everyday people, at every pace and ability,
+                  were left stitching things together on their own.
+                </p>
+                <p className="text-primary text-2xl font-bold italic">
+                  Everything felt scattered. That gap became CLUCK.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Brain & The Heartbeat Section */}
+      <section className="py-10 lg:py-0">
+        <div className="max-w-c-1154 mx-auto px-4 md:px-8 xl:px-0">
+          <div className="dark:bg-blacksection border-stroke dark:border-strokedark rounded-[40px] border bg-white p-8 shadow-md md:p-12 lg:p-16">
+            <div className="flex flex-col gap-12 md:flex-row md:items-center md:gap-20">
+              {/* Left Column: Context */}
+              <div className="md:w-1/2">
+                <p className="text-waterloo dark:text-manatee text-xl leading-relaxed md:text-[1.4rem]">
+                  Dmitri and I created CLUCK together. Dmitri (The Brain) brings
+                  the technology and the systems thinking. <br />
+                  <br />I (The Heartbeat) bring the community, the heartbeat,
+                  and the lived experience of being out there.
+                </p>
+              </div>
+
+              {/* Right Column: The Quote */}
+              <div className="md:w-1/2">
+                <div className="border-primary relative border-l-1 pl-8 md:pl-12">
+                  <p className="text-xl leading-normal font-light text-black/80 italic md:text-2xl dark:text-white/80">
+                    “Not just another app or leaderboard. CLUCK is a place where
+                    community actually lives, and where everyone can be part of
+                    it.”
+                  </p>
+                  <div className="mt-8">
+                    <p className="text-xl font-bold text-black dark:text-white">
+                      Travis
+                    </p>
+                    <p className="text-waterloo dark:text-manatee text-sm font-medium tracking-widest uppercase">
+                      Founder · Community Builder · Chief Fitness Officer
                     </p>
                   </div>
-                ))}
+                </div>
               </div>
             </div>
-            <div className="relative aspect-square w-full md:w-1/2">
-              <div className="from-primary/20 to-secondary/20 border-primary/10 flex h-full w-full items-center justify-center rounded-3xl border bg-gradient-to-br backdrop-blur-sm">
-                <Image
-                  src="/images/logo/logo-dark.png"
-                  alt="Cluck Logo"
-                  width={200}
-                  height={50}
-                  className="hidden opacity-50 dark:block"
-                />
-                <Image
-                  src="/images/logo/logo-light.png"
-                  alt="Cluck Logo"
-                  width={200}
-                  height={50}
-                  className="opacity-50 dark:hidden"
-                />
+          </div>
+        </div>
+      </section>
+
+      {/* The Team Section */}
+      <section className="py-20 lg:py-32">
+        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-black md:text-4xl dark:text-white">
+              The Team
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+            {[
+              {
+                name: "Dmitri S",
+                role: "Co-Founder and CEO, CTO",
+                tag: "“The Brain”",
+                image: "/images/features/founder-ds.avif",
+              },
+              {
+                name: "Travis S",
+                role: "Co-Founder and COO",
+                tag: "“The Heartbeat”",
+                image: "/images/features/founder-ts.avif",
+              },
+              {
+                name: "Nicole A",
+                role: "Strategic Advisor",
+                tag: "“The Backbone”",
+                image: "/images/features/nicole.avif",
+              },
+            ].map((member, i) => (
+              <div key={i} className="flex flex-col items-center text-center">
+                <div className="relative mb-6 aspect-square w-1/2 overflow-hidden rounded-3xl grayscale transition-all hover:grayscale-0 md:w-full">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+                <h3 className="mb-1 text-2xl font-bold text-black dark:text-white">
+                  {member.name}
+                </h3>
+                <p className="text-primary mb-2 font-bold tracking-widest uppercase">
+                  {member.tag}
+                </p>
+                <p className="text-waterloo dark:text-manatee">{member.role}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

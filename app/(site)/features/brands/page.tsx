@@ -959,6 +959,7 @@ export default function BrandsPage() {
                     ctaText="Get early access"
                     description="Early access invites. No pressure. No spam."
                     pageName="brands"
+                    initialInterests={["Brand"]}
                   />
                 </div>
               </div>

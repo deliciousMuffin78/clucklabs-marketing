@@ -270,7 +270,7 @@ export default function ProsPage() {
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/sponsors.avif"
+                src="/images/features/your-style.avif"
                 alt="Rewards & Sponsors"
                 fill
                 className="object-contain"
@@ -369,7 +369,7 @@ export default function ProsPage() {
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/leaderboard.avif"
+                src="/images/features/realtimetraining.avif"
                 alt="Purpose + Progress"
                 fill
                 className="object-contain"
@@ -467,7 +467,7 @@ export default function ProsPage() {
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/pro-clinic.avif"
+                src="/images/features/scale.avif"
                 alt="Add Pros"
                 fill
                 className="object-contain"
@@ -550,7 +550,7 @@ export default function ProsPage() {
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/lifestyle.avif"
+                src="/images/features/fit-over-clout.avif"
                 alt="Local feel, global reach"
                 fill
                 className="object-contain"
@@ -632,7 +632,7 @@ export default function ProsPage() {
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/members.avif"
+                src="/images/features/pro-clinic.avif"
                 alt="Better for them, too"
                 fill
                 className="object-contain"
@@ -718,7 +718,7 @@ export default function ProsPage() {
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/lifestyle.avif"
+                src="/images/features/revenue-mix.avif"
                 alt="Revenue"
                 fill
                 className="object-contain"
@@ -917,6 +917,7 @@ export default function ProsPage() {
                     ctaText="Get early access"
                     description="Early access invites. No pressure. No spam."
                     pageName="pros"
+                    initialInterests={["Pro"]}
                   />
                 </div>
               </div>

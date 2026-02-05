@@ -9,9 +9,9 @@ import { toast } from "react-hot-toast";
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
-    "idle",
-  );
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const pathname = usePathname();
 
   useEffect(() => {
@@ -25,7 +25,8 @@ const Footer = () => {
     setStatus("loading");
     try {
       // Clean up path name for the source tag
-      const pageName = pathname === "/" ? "homepage" : pathname.split("/").pop();
+      const pageName =
+        pathname === "/" ? "homepage" : pathname.split("/").pop();
 
       await signup({
         email,
@@ -232,7 +233,7 @@ const Footer = () => {
                           className="absolute right-0 flex h-full items-center justify-center px-4 transition-all duration-300 disabled:opacity-50"
                         >
                           {status === "loading" ? (
-                            <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+                            <div className="border-primary h-4 w-4 animate-spin rounded-full border-2 border-t-transparent" />
                           ) : (
                             <svg
                               className="hover:fill-primary fill-[#757693] dark:fill-white"

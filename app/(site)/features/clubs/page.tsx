@@ -772,7 +772,8 @@ export default function ClubsPage() {
                   <SignupForm
                     ctaText="Get early access"
                     description="Early access invites. No pressure. No spam."
-                    pageName="clupspage"
+                    pageName="clubs"
+                    initialInterests={["Club"]}
                   />
                 </div>
               </div>

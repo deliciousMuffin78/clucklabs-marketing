@@ -127,20 +127,10 @@ export default function SignupForm({
             </div>
           ) : (
             <>
-              <input
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                type="email"
-                placeholder="Enter your email"
-                required
-                disabled={status === "loading"}
-                className="border-primary/30 focus:border-primary flex-1 rounded-full border-2 bg-white px-6 py-4 text-black placeholder:text-black/60 focus:outline-hidden dark:border-white/30 dark:bg-black dark:text-white dark:placeholder:text-white/70"
-              />
-
               {showInterests && (
                 <div className="flex flex-col items-center gap-4">
-                  <p className="text-xs font-bold tracking-[2px] text-black/60 uppercase dark:text-white/60">
-                    What are you interested in?
+                  <p className="text-xl font-bold tracking-[1px] text-[#d11764] uppercase">
+                    Select your interests:
                   </p>
                   <div className="flex flex-wrap justify-center gap-3">
                     {interestsList.map((interest) => {
@@ -151,7 +141,7 @@ export default function SignupForm({
                           type="button"
                           onClick={() => toggleInterest(interest)}
                           disabled={status === "loading"}
-                          className={`text-md flex items-center gap-2 rounded-full px-5.5 py-2.5 font-medium transition-all duration-200 ${
+                          className={`text-lg flex items-center gap-2 rounded-full px-5.5 py-2.5 font-medium transition-all duration-200 ${
                             isSelected
                               ? "text-white"
                               : "bg-zumthor text-primary hover:bg-zumthor/80 dark:bg-white/10 dark:text-white"
@@ -168,6 +158,16 @@ export default function SignupForm({
                   </div>
                 </div>
               )}
+
+              <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                placeholder="Enter your email"
+                required
+                disabled={status === "loading"}
+                className="border-primary/30 focus:border-primary flex-1 rounded-full border-2 bg-white px-6 py-4 text-black placeholder:text-black/60 focus:outline-hidden dark:border-white/30 dark:bg-black dark:text-white dark:placeholder:text-white/70"
+              />
 
               <button
                 type="submit"

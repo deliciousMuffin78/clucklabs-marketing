@@ -273,7 +273,7 @@ export default function CreatorsPage() {
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/sponsors.avif"
+                src="/images/features/creators-run-the-business.avif"
                 alt="Rewards & Sponsors"
                 fill
                 className="object-contain"
@@ -290,8 +290,8 @@ export default function CreatorsPage() {
                 Earn from what your community does, not just what they watch.
               </h2>
               <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Cluck gives you multiple ways to earn, so one post can turn into
-                ongoing participation and recurring revenue.
+                Cluck turns participation into durable income, so one moment of
+                attention can compound into long term value.
               </p>
 
               <div className="flex flex-col gap-6">
@@ -301,7 +301,7 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Paid challenges: entry fees tied to participation and
+                      Paid challenges with entry fees tied to participation and
                       completion
                     </p>
                   </div>
@@ -313,8 +313,8 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Sponsor-backed prizes: brand-funded rewards that make
-                      challenges convert
+                      Programs and experiences like cohorts, series, workshops,
+                      and premium sessions
                     </p>
                   </div>
                 </div>
@@ -325,8 +325,8 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Programs and experiences: cohorts, series, workshops,
-                      premium sessions
+                      Plans at scale for training, nutrition, recovery, or
+                      habits
                     </p>
                   </div>
                 </div>
@@ -337,8 +337,7 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Plans at scale: sell repeatable training, nutrition, or
-                      recovery plans
+                      Memberships and subscriptions for your core community
                     </p>
                   </div>
                 </div>
@@ -349,8 +348,8 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Memberships and subscriptions: recurring value for your
-                      core community
+                      Sponsor backed prizes that increase conversion without
+                      forced promos
                     </p>
                   </div>
                 </div>
@@ -361,8 +360,8 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      2-year referrals: earn affiliate payouts for up to 2 years
-                      while a referred member stays subscribed
+                      Long tail referrals with affiliate payouts while members
+                      stay subscribed
                     </p>
                   </div>
                 </div>
@@ -376,98 +375,13 @@ export default function CreatorsPage() {
         </div>
       </section>
 
-      {/* Launch Fast Section (Image Left) */}
+      {/* Content Hub Section (Image Right) */}
       <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/leaderboard.avif"
-                alt="Launch Fast"
-                fill
-                className="object-contain"
-                priority
-                unoptimized
-              />
-            </div>
-
-            <div className="md:w-1/2">
-              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                LAUNCH FAST, RUN CLEAN
-              </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Pick the rules. <br />
-                <span className="text-primary">Pick the rewards. Go.</span>
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Run challenges your audience will finish, with fairness,
-                tracking, and payouts handled for you.
-              </p>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Choose a funded prize pool that already fits your
-                      audience, or bring your own rewards
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Set formats people understand: distance, streaks,
-                      milestones, teams, meetups
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Use built-in verification so wins feel fair and legit
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Run recurring challenges so momentum builds month over
-                      month
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
-                One challenge can earn more than a month of content.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Content Hub Section (Image Right) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
-        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
-              <Image
-                src="/images/features/pro-clinic.avif"
+                src="/images/features/creators.avif"
                 alt="Content Hub"
                 fill
                 className="object-contain"
@@ -561,10 +475,10 @@ export default function CreatorsPage() {
       {/* Momentum Section (Image Left) */}
       <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
+          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/lifestyle.avif"
+                src="/images/features/momentum-that-stacks.avif"
                 alt="Momentum that stacks"
                 fill
                 className="object-contain"
@@ -582,8 +496,8 @@ export default function CreatorsPage() {
                 <span className="text-primary">not the finish.</span>
               </h2>
               <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Use challenges to build trust, then offer deeper value through
-                programs, plans, memberships, and premium experiences.
+                Challenges build trust fast. That trust unlocks repeat
+                participation, deeper offers, and income that compounds.
               </p>
 
               <div className="flex flex-col gap-6">
@@ -593,7 +507,7 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Run seasonal themes and leagues that people come back for
+                      Launch challenges people understand and actually finish
                     </p>
                   </div>
                 </div>
@@ -604,7 +518,8 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Upsell into programs and memberships once trust is earned
+                      Run recurring formats that build habits and return
+                      behavior
                     </p>
                   </div>
                 </div>
@@ -615,8 +530,8 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Sell plans at scale and improve them over time based on
-                      performance
+                      Turn completed challenges into programs, plans, and
+                      memberships
                     </p>
                   </div>
                 </div>
@@ -627,7 +542,18 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Unlock sponsor upgrades when traction is proven
+                      Improve offers over time using real performance data
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Unlock sponsor upgrades once traction is proven
                     </p>
                   </div>
                 </div>
@@ -641,98 +567,13 @@ export default function CreatorsPage() {
         </div>
       </section>
 
-      {/* Rewards Section (Image Right) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
-        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
-              <Image
-                src="/images/features/members.avif"
-                alt="Rewards that make sense"
-                fill
-                className="object-contain"
-                priority
-                unoptimized
-              />
-            </div>
-
-            <div className="md:w-1/2">
-              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                REWARDS THAT MAKE SENSE
-              </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Work with brands through prizes, not forced promos.
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Cluck gives you brand-funded rewards that tie directly to
-                participation, so value feels real for your audience and clear
-                for sponsors.
-              </p>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Choose from live prize pools that match your challenge
-                      format
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Bring your own brand partners and run rewards cleanly
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Track participation and completion so sponsor outcomes are
-                      obvious
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Pay prizes and handle payouts without spreadsheets or
-                      chaos
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
-                Your audience gets real motivation. You get repeatable income.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Business Ops Section (Image Left) */}
       <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/lifestyle.avif"
+                src="/images/features/creators-run-the-business.avif"
                 alt="Run the business, not the scramble"
                 fill
                 className="object-contain"
@@ -763,7 +604,8 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Keep community chat, announcements, and updates together
+                      Manage community chat, updates, and announcements in one
+                      place
                     </p>
                   </div>
                 </div>
@@ -775,7 +617,7 @@ export default function CreatorsPage() {
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
                       Sell access to challenges, programs, memberships, and
-                      plans in one flow
+                      plans in a single flow
                     </p>
                   </div>
                 </div>
@@ -786,7 +628,8 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Track real participation so you know what actually worked
+                      Track real participation so you know what worked and what
+                      did not
                     </p>
                   </div>
                 </div>
@@ -797,7 +640,8 @@ export default function CreatorsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Get paid cleanly, with payouts that match activity
+                      Handle payments and payouts cleanly without spreadsheets
+                      or side tools
                     </p>
                   </div>
                 </div>
@@ -836,6 +680,7 @@ export default function CreatorsPage() {
                     ctaText="Get early access"
                     description="Early access invites. No pressure. No spam."
                     pageName="creators"
+                    initialInterests={["Creator"]}
                   />
                 </div>
               </div>

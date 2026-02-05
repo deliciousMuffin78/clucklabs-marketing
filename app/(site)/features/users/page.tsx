@@ -102,7 +102,7 @@ const cluckActions = [
     ],
     closer:
       "Life gets busy. Cluck helps you keep momentum without turning it into a restart.",
-    image: "/images/features/run.avif",
+    image: "/images/features/run-walk-cycle.avif",
   },
   {
     overlay: "Train",
@@ -118,7 +118,7 @@ const cluckActions = [
     ],
     closer:
       "Because the best results come from training that’s sustainable, not just intense.",
-    image: "/images/features/training.avif",
+    image: "/images/features/train.avif",
   },
   {
     overlay: "FOUNDATION",
@@ -134,7 +134,7 @@ const cluckActions = [
       "Connect the whole system: see how movement, sleep, stress, and nutrition affect how your body shows up",
     ],
     closer: "Not training for sport - training for life.",
-    image: "/images/features/mobility.avif",
+    image: "/images/features/foundation.avif",
   },
   {
     overlay: "SLEEP & WELLBEING",
@@ -151,7 +151,7 @@ const cluckActions = [
     ],
     closer:
       "When everything is connected, the signals get clear, and better days get easier to repeat.",
-    image: "/images/features/stress.avif",
+    image: "/images/features/wellness.avif",
   },
   {
     overlay: "NUTRITION",
@@ -183,7 +183,7 @@ const cluckActions = [
     ],
     closer:
       "You don’t have to do everything,small changes at the right time add up.",
-    image: "/images/features/cycle.avif",
+    image: "/images/features/cycle2.avif",
   },
 ];
 
@@ -204,7 +204,8 @@ const CluckActionRow = ({ action, index }: { action: any; index: number }) => {
               src={action.image}
               alt={action.subtitle}
               fill
-              className="rounded-2xl object-cover"
+              className="rounded-2xl object-contain"
+              unoptimized
             />
           </div>
 
@@ -716,6 +717,7 @@ export default function UsersPage() {
                     ctaText="Get early access"
                     description="Early access invites. No pressure. No spam."
                     pageName="user"
+                    initialInterests={["Individual"]}
                   />
                 </div>
               </div>

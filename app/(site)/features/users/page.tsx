@@ -192,7 +192,7 @@ const CluckActionRow = ({ action, index }: { action: any; index: number }) => {
   const isImageRight = index % 2 !== 0;
 
   return (
-    <section className="py-20">
+    <section className="py-5 md:py-20">
       <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
         <div
           className={`flex flex-col items-center gap-8 md:flex-row lg:gap-32.5 ${
@@ -281,12 +281,12 @@ export default function UsersPage() {
           <img
             src="/images/hero/users-app.avif"
             alt="User Hero Background"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover md:object-cover"
           />
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[27%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[24%] md:px-8 md:pt-0 xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[26%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[24%] md:px-8 md:pt-0 xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-4.5 text-lg font-medium tracking-[4px] text-white uppercase">
               Individuals · Members · Humans
@@ -528,7 +528,7 @@ export default function UsersPage() {
       </section>
 
       {/* Continue Section (Image Left) */}
-      <section className="relative overflow-hidden py-20">
+      <section className="relative overflow-hidden py-0 md:py-0">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">

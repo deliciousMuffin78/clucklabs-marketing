@@ -80,7 +80,8 @@ export default function ClubsPage() {
             <h4 className="mb-4.5 text-lg font-medium tracking-[4px] text-white uppercase">
               Clubs & Communities
             </h4>
-            <h1 className="mb-6 max-w-[900px] text-[4.5rem] leading-[1.1] font-bold text-white">
+            <h1 className="mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold text-white md:text-5xl lg:text-[4.5rem]">
+              {/*<h1 className="mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold text-white md:text-5xl lg:text-[4.5rem]"> */}
               Run your club. <br />
               Grow your community. <br />
               <span className="text-primary">Get paid.</span>
@@ -749,7 +750,7 @@ export default function ClubsPage() {
       </section>
 
       {/* <!-- Final CTA Section --> */}
-      <section className="relative overflow-hidden py-32 lg:py-36">
+      <section className="relative overflow-hidden py-10 pb-24 lg:py-36">
         <MeshGradient />
         <div className="max-w-c-1315 relative z-10 mx-auto px-4 md:px-8 xl:px-0">
           {/* Outer Shell (The thick translucent frame) */}

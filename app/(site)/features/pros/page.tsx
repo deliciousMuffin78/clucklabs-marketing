@@ -85,12 +85,12 @@ export default function ProsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[23%] items-center justify-center px-4 text-center md:px-8 xl:px-0">
+        <div className="max-w-c-1315 lg: relative z-10 mx-auto flex h-full -translate-y-[24%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[22%] md:px-8 md:pt-0 xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="text-primary mb-4.5 text-lg font-medium tracking-[4px] uppercase">
               Coaches · Trainers · Nutritionists · Specialists
             </h4>
-            <h1 className="text-primary mb-6 max-w-[900px] text-[4.1rem] leading-[1.1] font-bold">
+            <h1 className="text-primary mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold md:text-[4.1rem] lg:text-[4.1rem]">
               You don’t need to be famous. You need to be good.
             </h1>
             <p className="text-primary mb-10 max-w-[900px] text-xl drop-shadow-sm md:text-2xl">
@@ -893,7 +893,7 @@ export default function ProsPage() {
       </section>
 
       {/* <!-- Final CTA Section --> */}
-      <section className="relative overflow-hidden py-32 lg:py-36">
+      <section className="relative overflow-hidden py-0 pb-24 lg:py-36">
         <MeshGradient />
         <div className="max-w-c-1315 relative z-10 mx-auto px-4 md:px-8 xl:px-0">
           {/* Outer Shell (The thick translucent frame) */}

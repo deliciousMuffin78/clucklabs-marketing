@@ -106,7 +106,7 @@ export default function BrandsPage() {
       </section>
 
       {/* Features Grid Section */}
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-20">
         <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           {/* Section Header */}
           <div className="mx-auto mb-16 max-w-[900px] text-center md:mb-24">
@@ -176,96 +176,23 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      {/* SMB Section (Image Left) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      {/* INCENTIVES THAT DRIVE REAL ACTION Section */}
+      <section className="overflow-hidden pt-4 pb-10 lg:pt-6 lg:pb-20">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
-              <Image
-                src="/images/features/clubs-dashboard.avif"
-                alt="Built for SMBs"
-                fill
-                className="object-contain"
-                priority
-                unoptimized
-              />
-            </div>
-
-            <div className="md:w-1/2">
+          <div className="flex flex-col items-center gap-8">
+            <div className="w-full max-w-[900px] text-center">
               <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                BUILT FOR SMBS, TOO
+                INCENTIVES THAT DRIVE REAL ACTION
               </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Not a global brand? <br />
-                <span className="text-primary">Perfect.</span>
+              <h2 className="relative mb-0 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
+                Impressions don’t create behavior. <br />
+                <span className="text-primary">Rewards do.</span>
               </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Cluck works for the places people actually visit and talk about:
-                local shops, studios, clinics, cafés, and regional brands who
-                want real action.
-              </p>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Local cafés, juice bars, and restaurants
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Gyms, studios, and wellness clinics
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Run shops, bike shops, and specialty retail
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Regional and national brands
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
-                If your goal is real people doing something, get Cluck.
-              </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Incentives Section (Flipped Design) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
-        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
+            <div className="relative mx-auto aspect-[16/7] w-full max-w-[1000px]">
               <Image
-                src="/images/features/sponsors.avif"
+                src="/images/features/brands-rewards-at-scale.avif"
                 alt="Incentives move people"
                 fill
                 className="object-contain"
@@ -274,69 +201,93 @@ export default function BrandsPage() {
               />
             </div>
 
-            <div className="md:w-1/2">
-              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                INCENTIVES MOVE PEOPLE
-              </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Impressions don’t create behavior. <br />
-                <span className="text-primary">Rewards do.</span>
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Traditional marketing pays for attention and hopes for action.
-                Cluck flips that by tying spend to verified participation and
-                clear outcomes.
-              </p>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Participation you can count
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Actions you can measure
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Communities that repeat it
-                    </p>
+            <div className="mt-8 w-full max-w-[1000px]">
+              <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+                {/* Column 1 */}
+                <div>
+                  <p className="text-waterloo dark:text-manatee mb-8 text-lg">
+                    Traditional marketing pays for attention and hopes for
+                    action. Cluck flips that by tying spend to verified
+                    participation and clear, real world outcomes.
+                  </p>
+                  <div className="flex flex-col gap-4">
+                    <div className="flex items-start gap-4">
+                      <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                        <CheckCircle2 size={16} />
+                      </div>
+                      <p className="text-waterloo dark:text-manatee text-lg">
+                        Participation you can count
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                        <CheckCircle2 size={16} />
+                      </div>
+                      <p className="text-waterloo dark:text-manatee text-lg">
+                        Actions you can measure
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                        <CheckCircle2 size={16} />
+                      </div>
+                      <p className="text-waterloo dark:text-manatee text-lg">
+                        Communities that repeat
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                        <CheckCircle2 size={16} />
+                      </div>
+                      <p className="text-waterloo dark:text-manatee text-lg">
+                        Results that show up in the real world
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Content that comes from doing, not posing
-                    </p>
+                {/* Column 2 */}
+                <div>
+                  <p className="text-waterloo dark:text-manatee mb-8 text-lg">
+                    Cluck is built for the places people actually visit and talk
+                    about. Local shops, studios, gyms, cafés, clinics, and
+                    regional brands that want people to do something, not just
+                    see something.
+                  </p>
+                  <div className="flex flex-col gap-4">
+                    <div className="flex items-start gap-4">
+                      <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                        <CheckCircle2 size={16} />
+                      </div>
+                      <p className="text-waterloo dark:text-manatee text-lg">
+                        Post activity rewards that drive same day visits
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                        <CheckCircle2 size={16} />
+                      </div>
+                      <p className="text-waterloo dark:text-manatee text-lg">
+                        Event nights, pickups, and in store moments people plan
+                        for
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                        <CheckCircle2 size={16} />
+                      </div>
+                      <p className="text-waterloo dark:text-manatee text-lg">
+                        Repeat challenges that build weekly habits and repeat
+                        business
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
-                Designed for genuine participation at scale. You can’t automate
-                effort.
+              <p className="mt-16 text-center text-xl font-bold text-black dark:text-white">
+                You are not buying reach. You are rewarding behavior with
+                communities that show up.
               </p>
             </div>
           </div>
@@ -344,7 +295,7 @@ export default function BrandsPage() {
       </section>
 
       {/* Effort Level Section (Two Columns) */}
-      <section className="relative overflow-hidden py-20 lg:py-32">
+      <section className="relative overflow-hidden py-10 lg:py-20">
         <MeshGradient />
         <div className="max-w-c-1315 relative z-10 mx-auto px-4 md:px-8 xl:px-0">
           {/* Outer Shell (The thick translucent frame) */}
@@ -530,12 +481,12 @@ export default function BrandsPage() {
       </section>
 
       {/* Rewards at Scale Section (Image Left) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden py-10 pb-20 lg:py-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/leaderboard.avif"
+                src="/images/features/sponsors.avif"
                 alt="Rewards at scale"
                 fill
                 className="object-contain"
@@ -549,13 +500,14 @@ export default function BrandsPage() {
                 REWARDS AT SCALE
               </h4>
               <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Build a bank of rewards <br />
-                <span className="text-primary">that gets used.</span>
+                Build once.
+                <br />
+                <span className="text-primary">Activate everywhere.</span>
               </h2>
               <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Prize pools let you publish offers once and apply them across
-                many challenges, communities, and regions without rebuilding
-                every campaign.
+                Prize pools let you publish rewards once and apply them across
+                challenges, communities, and regions without rebuilding
+                campaigns every time.
               </p>
 
               <div className="flex flex-col gap-6">
@@ -576,7 +528,7 @@ export default function BrandsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Set eligibility: location, timing, participation level,
+                      Set eligibility by location, timing, participation level,
                       completion rules
                     </p>
                   </div>
@@ -604,55 +556,6 @@ export default function BrandsPage() {
                     </p>
                   </div>
                 </div>
-              </div>
-
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
-                One set of rewards can power many campaigns.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Storefront Section (Image Right) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
-        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
-              <Image
-                src="/images/features/pro-clinic.avif"
-                alt="Movement to storefront"
-                fill
-                className="object-contain"
-                priority
-                unoptimized
-              />
-            </div>
-
-            <div className="md:w-1/2">
-              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                MOVEMENT TO STOREFRONT
-              </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Turn showing up <br />
-                <span className="text-primary">into walking in.</span>
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Cluck is ideal for SMBs because rewards can be tied to real
-                participation and then redeemed locally.
-              </p>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Post-activity offers that drive visits the same day
-                    </p>
-                  </div>
-                </div>
 
                 <div className="flex items-start gap-5">
                   <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
@@ -660,28 +563,15 @@ export default function BrandsPage() {
                   </div>
                   <div className="flex-1">
                     <p className="text-waterloo dark:text-manatee">
-                      Event nights, pickups, and in-store moments people plan
-                      for
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Repeat challenges that build weekly habit and repeat
-                      business
+                      Create challenges, fund rewards, reach communities, and
+                      see what worked without juggling tools or workflows.
                     </p>
                   </div>
                 </div>
               </div>
 
               <p className="mt-10 text-lg font-medium text-black dark:text-white">
-                You’re not buying reach. You’re rewarding behavior with the
-                community that shows up.
+                One set of rewards. One system. Less noise. More signal.
               </p>
             </div>
           </div>
@@ -691,10 +581,10 @@ export default function BrandsPage() {
       {/* Confidence Section (Image Left) */}
       <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
+          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/lifestyle.avif"
+                src="/images/features/brands-verification.avif"
                 alt="Confidence without hassle"
                 fill
                 className="object-contain"
@@ -773,10 +663,10 @@ export default function BrandsPage() {
       {/* Earned Attention Section (Image Right) */}
       <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
+          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
-                src="/images/features/sponsors.avif"
+                src="/images/features/brands-posting.avif"
                 alt="Earned attention"
                 fill
                 className="object-contain"
@@ -841,101 +731,8 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      {/* Simple, End to End Section (Image Left) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
-        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
-              <Image
-                src="/images/features/clubs-dashboard-sponsors.avif"
-                alt="Simple, end to end"
-                fill
-                className="object-contain"
-                priority
-                unoptimized
-              />
-            </div>
-
-            <div className="md:w-1/2">
-              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                SIMPLE, END TO END
-              </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Everything you need to run <br />
-                <span className="text-primary">outcome-driven campaigns.</span>
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Create challenges, fund rewards, reach communities, and see what
-                worked without managing a dozen tools.
-              </p>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Challenge creation and distribution
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Prize pool management
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Club and creator activation paths
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Participation, completion, and redemption reporting
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Clean setup that works for SMBs and scales for brands
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
-                Less noise. More signal.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA Section */}
-      <section className="relative overflow-hidden py-32 lg:py-36">
+      <section className="relative overflow-hidden py-20 lg:py-20">
         <MeshGradient />
         <div className="max-w-c-1315 relative z-10 mx-auto px-4 md:px-8 xl:px-0">
           {/* Outer Shell (The thick translucent frame) */}

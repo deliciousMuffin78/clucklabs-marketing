@@ -112,7 +112,7 @@ export default function CreatorsPage() {
       </section>
 
       {/* Features Grid Section */}
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-20">
         <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           {/* Section Header */}
           <div className="mx-auto mb-16 max-w-[900px] text-center md:mb-24">
@@ -178,6 +178,210 @@ export default function CreatorsPage() {
                 </NoiseBackground>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MORE THAN ONE PAYDAY Section */}
+      <section className="overflow-hidden pt-20 pb-20 lg:pt-10 lg:pb-30">
+        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex flex-col items-center gap-6 md:gap-8 lg:gap-0">
+            <div className="w-full max-w-[900px]">
+              <div className="text-center">
+                <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                  MORE THAN ONE PAYDAY
+                </h4>
+                <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
+                  Earn from what your community does, not just what they watch.
+                </h2>
+                <p className="text-waterloo dark:text-manatee mx-auto max-w-[700px] text-lg">
+                  Cluck turns participation into durable income, so one moment
+                  of attention can compound into long term value.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative mx-auto aspect-[588/526.5] w-full max-w-[800px]">
+              <Image
+                src="/images/features/creators-run-the-business.avif"
+                alt="More than one payday"
+                fill
+                className="object-contain"
+                priority
+                unoptimized
+              />
+            </div>
+
+            <div className="w-full max-w-[900px]">
+              <div className="grid grid-cols-1 gap-x-15 gap-y-8 md:grid-cols-2">
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Paid challenges with entry fees tied to participation and
+                      completion
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Programs and experiences like cohorts, series, workshops,
+                      and premium sessions
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Plans at scale for training, nutrition, recovery, or
+                      habits
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Memberships and subscriptions for your core community
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Sponsor backed prizes that increase conversion without
+                      forced promos
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Long tail referrals with affiliate payouts while members
+                      stay subscribed
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p className="mt-12 text-center text-lg font-medium text-black dark:text-white">
+                Durable earnings beat one-off posts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Business Ops Section */}
+      <section className="overflow-hidden pt-20 pb-20 lg:pt-10 lg:pb-30">
+        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex flex-col items-center gap-6 md:gap-8 lg:gap-0">
+            <div className="w-full max-w-[900px]">
+              <div className="text-center">
+                <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                  RUN THE BUSINESS, NOT THE SCRAMBLE
+                </h4>
+                <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
+                  Payments, delivery, and <br />
+                  <span className="text-primary">
+                    payouts handled inside Cluck.
+                  </span>
+                </h2>
+                <p className="text-waterloo dark:text-manatee mx-auto max-w-[700px] text-lg">
+                  Run your community without link chaos, platform hopping, or
+                  manual follow-ups.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative mx-auto aspect-[588/526.5] w-full max-w-[800px]">
+              <Image
+                src="/images/features/clubs-cockpit.avif"
+                alt="Run the business, not the scramble"
+                fill
+                className="object-contain"
+                priority
+                unoptimized
+              />
+            </div>
+
+            <div className="w-full max-w-[900px]">
+              <div className="grid grid-cols-1 gap-x-15 gap-y-8 md:grid-cols-2">
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Manage community chat, updates, and announcements in one
+                      place
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Sell access to challenges, programs, memberships, and
+                      plans in a single flow
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Track real participation so you know what worked and what
+                      did not
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-5">
+                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
+                    <CheckCircle2 size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-waterloo dark:text-manatee">
+                      Handle payments and payouts cleanly without spreadsheets
+                      or side tools
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p className="mt-12 text-center text-lg font-medium text-black dark:text-white">
+                Creators do not just post. They move people.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -267,120 +471,10 @@ export default function CreatorsPage() {
         </div>
       </section>
 
-      {/* Rewards & Sponsors Section */}
-      <section className="overflow-hidden pb-20 lg:pb-30">
-        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-12">
-            <div className="relative mx-auto aspect-[588/526.5] w-full max-w-[800px]">
-              <Image
-                src="/images/features/creators-run-the-business.avif"
-                alt="More than one payday"
-                fill
-                className="object-contain"
-                priority
-                unoptimized
-              />
-            </div>
-
-            <div className="w-full max-w-[900px]">
-              <div className="mb-12 text-center">
-                <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                  MORE THAN ONE PAYDAY
-                </h4>
-                <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                  Earn from what your community does, not just what they watch.
-                </h2>
-                <p className="text-waterloo dark:text-manatee mx-auto max-w-[700px] text-lg">
-                  Cluck turns participation into durable income, so one moment
-                  of attention can compound into long term value.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 gap-x-15 gap-y-8 md:grid-cols-2">
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Paid challenges with entry fees tied to participation and
-                      completion
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Programs and experiences like cohorts, series, workshops,
-                      and premium sessions
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Plans at scale for training, nutrition, recovery, or
-                      habits
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Memberships and subscriptions for your core community
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Sponsor backed prizes that increase conversion without
-                      forced promos
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Long tail referrals with affiliate payouts while members
-                      stay subscribed
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <p className="mt-12 text-center text-lg font-medium text-black dark:text-white">
-                Durable earnings beat one-off posts.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Content Hub Section (Image Right) */}
       <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
+          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
                 src="/images/features/creators.avif"
@@ -477,7 +571,7 @@ export default function CreatorsPage() {
       {/* Momentum Section (Image Left) */}
       <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
+          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
                 src="/images/features/momentum-that-stacks.avif"
@@ -569,96 +663,8 @@ export default function CreatorsPage() {
         </div>
       </section>
 
-      {/* Business Ops Section (Image Left) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
-        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
-              <Image
-                src="/images/features/clubs-cockpit.avif"
-                alt="Run the business, not the scramble"
-                fill
-                className="object-contain"
-                priority
-                unoptimized
-              />
-            </div>
-
-            <div className="md:w-1/2">
-              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                RUN THE BUSINESS, NOT THE SCRAMBLE
-              </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Payments, delivery, and <br />
-                <span className="text-primary">
-                  payouts handled inside Cluck.
-                </span>
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Run your community without link chaos, platform hopping, or
-                manual follow-ups.
-              </p>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Manage community chat, updates, and announcements in one
-                      place
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Sell access to challenges, programs, memberships, and
-                      plans in a single flow
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Track real participation so you know what worked and what
-                      did not
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-5">
-                  <div className="bg-primary/10 text-primary mt-1 flex h-6 w-6 items-center justify-center rounded-full">
-                    <CheckCircle2 size={16} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-waterloo dark:text-manatee">
-                      Handle payments and payouts cleanly without spreadsheets
-                      or side tools
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
-                Creators do not just post. They move people.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA Section */}
-      <section className="relative overflow-hidden py-32 lg:py-36">
+      <section className="relative overflow-hidden py-32 lg:py-10">
         <MeshGradient />
         <div className="max-w-c-1315 relative z-10 mx-auto px-4 md:px-8 xl:px-0">
           {/* Outer Shell (The thick translucent frame) */}

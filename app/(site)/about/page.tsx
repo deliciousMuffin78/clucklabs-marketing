@@ -145,13 +145,13 @@ export default function AboutPage() {
             {[
               {
                 name: "Dmitri S",
-                role: "Co-Founder and CEO, CTO",
+                role: "Founder and CEO, CTO",
                 tag: "“The Brain”",
                 image: "/images/features/founder-ds.avif",
               },
               {
                 name: "Travis S",
-                role: "Co-Founder and COO",
+                role: "Founder and COO",
                 tag: "“The Heartbeat”",
                 image: "/images/features/founder-ts.avif",
               },

@@ -42,12 +42,12 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[24%] items-center justify-center px-4 text-center md:px-8 xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[27%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[24%] md:px-8 md:pt-0 xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-4.5 text-lg font-medium tracking-[4px] text-white uppercase">
               Individuals · Clubs · Pros · Creators
             </h4>
-            <h1 className="mb-6 max-w-[900px] text-[4.5rem] leading-[1.1] font-bold text-white">
+            <h1 className="mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold text-white md:text-5xl lg:text-[4.5rem]">
               One app. Total clarity. <br />
               <span className="text-primary">Ecosystem for progress.</span>
             </h1>
@@ -440,11 +440,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Modern Club Management Section (Copied from About Design) */}
+      {/* <!-- How Cluck Works Section --> */}
       <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
+          <div className="flex flex-col items-center gap-12">
+            <div className="w-full max-w-[900px] text-center">
+              <h4 className="text-primary mb-4 inline-block rounded-full bg-white px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                HOW CLUCK WORKS
+              </h4>
+              <h2 className="relative mb-6 text-3xl leading-[1.2] font-bold text-black md:text-4xl lg:text-5xl dark:text-white">
+                From maybe tomorrow <br />
+                <span className="text-primary">to done.</span>
+              </h2>
+              <p className="text-waterloo dark:text-manatee mx-auto max-w-[700px] text-lg">
+                Cluck connects your routine to clear next steps and real
+                accountability, so progress feels simpler to start and easier to
+                repeat.
+              </p>
+            </div>
+
+            <div className="relative mx-auto aspect-[588/526.5] w-full max-w-[800px]">
               <Image
                 src="/images/features/how-it-works.avif"
                 alt="Modern Club Management"
@@ -455,48 +470,35 @@ export default function Home() {
               />
             </div>
 
-            <div className="md:w-1/2">
-              <h4 className="text-primary mb-4 inline-block rounded-full bg-white px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                HOW CLUCK WORKS
-              </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                From maybe tomorrow <br />
-                <span className="text-primary">to done.</span>
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Cluck connects your routine to clear next steps and real
-                accountability, so progress feels simpler to start and easier to
-                repeat.
-              </p>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex items-center gap-5">
-                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/10">
+            <div className="w-full max-w-[1100px]">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div className="border-stroke shadow-solid-3 dark:border-strokedark dark:bg-blacksection flex items-start gap-5 rounded-3xl border bg-white p-8">
+                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm dark:bg-white/10">
                     <Link2 size={22} />
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <p className="text-waterloo dark:text-manatee text-lg">
                       Connect what you use (or start simple)
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-5">
-                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/10">
+                <div className="border-stroke shadow-solid-3 dark:border-strokedark dark:bg-blacksection flex items-start gap-5 rounded-3xl border bg-white p-8">
+                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm dark:bg-white/10">
                     <Compass size={22} />
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <p className="text-waterloo dark:text-manatee text-lg">
                       Get your next step based on signals that matter
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-5">
-                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/10">
+                <div className="border-stroke shadow-solid-3 dark:border-strokedark dark:bg-blacksection flex items-start gap-5 rounded-3xl border bg-white p-8">
+                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm dark:bg-white/10">
                     <Users size={22} />
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <p className="text-waterloo dark:text-manatee text-lg">
                       Show up with people through clubs, events, and challenges
                     </p>
@@ -504,7 +506,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
+              <p className="mt-12 text-center text-lg font-medium text-black dark:text-white">
                 Less guessing. More follow-through. Better days you can repeat.
               </p>
             </div>
@@ -512,11 +514,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Rewards & Sponsors Section (Flipped Design) */}
+      {/* Why this works (Stacked Design) */}
       <section className="overflow-hidden pb-20 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
-            <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
+          <div className="flex flex-col items-center gap-12">
+            <div className="w-full max-w-[900px] text-center">
+              <h4 className="text-primary mb-4 inline-block rounded-full bg-white px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+                Why this works
+              </h4>
+              <h2 className="relative mb-6 text-3xl leading-[1.2] font-bold text-black md:text-4xl lg:text-5xl dark:text-white">
+                Cluck connects the people <br />
+                <span className="text-primary">who create progress.</span>
+              </h2>
+              <p className="text-waterloo dark:text-manatee mx-auto max-w-[700px] text-lg">
+                Members train inside Cluck—then clubs, pros, creators, and
+                brands plug in to make showing up easier and more rewarding.
+              </p>
+            </div>
+
+            <div className="relative mx-auto aspect-[588/526.5] w-full max-w-[800px]">
               <Image
                 src="/images/features/why-it-works.avif"
                 alt="Rewards & Sponsors"
@@ -527,25 +543,13 @@ export default function Home() {
               />
             </div>
 
-            <div className="md:w-1/2">
-              <h4 className="text-primary mb-4 inline-block rounded-full bg-white px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
-                Why this works
-              </h4>
-              <h2 className="relative mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
-                Cluck connects the people <br />
-                <span className="text-primary">who create progress.</span>
-              </h2>
-              <p className="text-waterloo dark:text-manatee mb-8 text-lg">
-                Members train inside Cluck—then clubs, pros, creators, and
-                brands plug in to make showing up easier and more rewarding.
-              </p>
-
-              <div className="flex flex-col gap-6">
-                <div className="flex items-center gap-5">
-                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/10">
+            <div className="w-full max-w-[1100px]">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className="border-stroke shadow-solid-3 dark:border-strokedark dark:bg-blacksection flex items-start gap-5 rounded-3xl border bg-white p-8">
+                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm dark:bg-white/10">
                     <Users size={22} />
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <p className="text-waterloo dark:text-manatee text-lg">
                       Clubs create rhythm through events, challenges, and
                       community
@@ -553,11 +557,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-5">
-                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/10">
+                <div className="border-stroke shadow-solid-3 dark:border-strokedark dark:bg-blacksection flex items-start gap-5 rounded-3xl border bg-white p-8">
+                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm dark:bg-white/10">
                     <Zap size={22} />
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <p className="text-waterloo dark:text-manatee text-lg">
                       Pros add targeted help when members need more than a
                       meetup
@@ -565,11 +569,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-5">
-                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/10">
+                <div className="border-stroke shadow-solid-3 dark:border-strokedark dark:bg-blacksection flex items-start gap-5 rounded-3xl border bg-white p-8">
+                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm dark:bg-white/10">
                     <Sparkles size={22} />
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <p className="text-waterloo dark:text-manatee text-lg">
                       Creators drive participation with challenges people
                       actually finish
@@ -577,11 +581,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-5">
-                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/10">
+                <div className="border-stroke shadow-solid-3 dark:border-strokedark dark:bg-blacksection flex items-start gap-5 rounded-3xl border bg-white p-8">
+                  <div className="text-primary flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm dark:bg-white/10">
                     <Award size={22} />
                   </div>
-                  <div className="flex-1">
+                  <div>
                     <p className="text-waterloo dark:text-manatee text-lg">
                       Brands fund rewards tied to measurable actions
                     </p>
@@ -589,7 +593,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <p className="mt-10 text-lg font-medium text-black dark:text-white">
+              <p className="mt-12 text-center text-lg font-medium text-black dark:text-white">
                 Everyone wins when participation is the point.
               </p>
             </div>

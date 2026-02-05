@@ -209,7 +209,7 @@ const CluckActionRow = ({ action, index }: { action: any; index: number }) => {
             />
           </div>
 
-          <div className="md:w-1/2">
+          <div className="text-center md:w-1/2 md:text-left">
             <h4 className="bg-zumthor text-primary mb-2 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
               {action.overlay}
             </h4>
@@ -225,7 +225,7 @@ const CluckActionRow = ({ action, index }: { action: any; index: number }) => {
 
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="text-primary flex w-fit items-center gap-2 text-sm font-bold tracking-widest uppercase transition-opacity hover:opacity-80"
+              className="text-primary mx-auto flex w-fit items-center gap-2 text-sm font-bold tracking-widest uppercase transition-opacity hover:opacity-80 md:mx-0"
             >
               {isExpanded ? "Hide details" : "See details"}
               <motion.span animate={{ rotate: isExpanded ? 180 : 0 }}>
@@ -286,12 +286,12 @@ export default function UsersPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[23%] items-center justify-center px-4 text-center md:px-8 xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[27%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[24%] md:px-8 md:pt-0 xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-4.5 text-lg font-medium tracking-[4px] text-white uppercase">
               Individuals · Members · Humans
             </h4>
-            <h1 className="mb-6 max-w-[900px] text-[4.5rem] leading-[1.1] font-bold text-white">
+            <h1 className="mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold text-white md:text-5xl lg:text-[4.5rem]">
               One app. Fewer guesses. <br />
               <span className="text-primary">Better days. Real life.</span>
             </h1>
@@ -308,7 +308,7 @@ export default function UsersPage() {
                   ctaText="Get Early Access"
                   description="Early access invites. No pressure. No spam."
                   showInterests={false}
-                  pageName="user"
+                  pageName="users"
                   descriptionClassName="text-white/70"
                 />
               </div>
@@ -321,7 +321,10 @@ export default function UsersPage() {
       <section className="pt-20">
         <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           <div className="mx-auto max-w-[900px] text-center">
-            <h2 className="text-primary text-3xl font-bold md:text-4xl lg:text-5xl">
+            <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+              The App
+            </h4>
+            <h2 className="text-3xl font-bold text-black md:text-4xl lg:text-5xl dark:text-white">
               What you can do in Cluck
             </h2>
             <p className="text-waterloo dark:text-manatee mt-4 text-xl md:text-2xl">
@@ -454,7 +457,7 @@ export default function UsersPage() {
             <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
               Stay consistent
             </h4>
-            <h2 className="text-primary mb-6 text-2xl leading-[1.2] font-bold md:text-3xl lg:text-4xl">
+            <h2 className="mb-6 text-2xl leading-[1.2] font-bold text-black md:text-3xl lg:text-4xl dark:text-white">
               Accountability that actually works: people.
             </h2>
             <p className="text-waterloo dark:text-manatee text-xl leading-relaxed md:text-[1.4rem]">

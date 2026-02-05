@@ -22,10 +22,14 @@ const Header = () => {
   const pathUrl = usePathname();
 
   // Prepare nav items from menuData
-  const mainNavItems = menuData.map((item) => ({
-    name: item.title,
-    link: item.path || "#",
-  }));
+  const mainNavItems = menuData
+    .filter((item) => item.path !== "/about")
+    .map((item) => ({
+      name: item.title,
+      link: item.path || "#",
+    }));
+
+  const aboutItem = menuData.find((item) => item.path === "/about");
 
   return (
     <Navbar>
@@ -49,8 +53,24 @@ const Header = () => {
         </Link>
 
         {/* This will push the nav items to the right */}
-        <div className="flex flex-1 justify-end">
+        <div className="flex flex-1 items-center justify-end">
           <NavItems items={mainNavItems} />
+          {aboutItem && (
+            <>
+              <div className="mx-2 h-4 w-px bg-black/20 dark:bg-white/20" />
+              <Link
+                href={aboutItem.path || "/about"}
+                className={cn(
+                  "hover:text-primary px-4 py-2 text-[17px] font-medium transition-colors",
+                  pathUrl === aboutItem.path
+                    ? "text-primary"
+                    : "text-black dark:text-white",
+                )}
+              >
+                {aboutItem.title}
+              </Link>
+            </>
+          )}
         </div>
       </NavBody>
 

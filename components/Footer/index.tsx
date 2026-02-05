@@ -155,6 +155,14 @@ const Footer = () => {
                         Brands | Retailers
                       </a>
                     </li>
+                    <li>
+                      <a
+                        href="/about"
+                        className="hover:text-primary mb-3 inline-block"
+                      >
+                        About Us
+                      </a>
+                    </li>
                   </ul>
                 </motion.div>
 

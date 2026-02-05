@@ -35,7 +35,7 @@ export default function Home() {
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero/users-app.avif"
+            src="/images/hero/home-hero1.avif"
             alt="User Hero Background"
             className="h-full w-full object-cover"
           />

@@ -102,7 +102,7 @@ const cluckActions = [
     ],
     closer:
       "Life gets busy. Cluck helps you keep momentum without turning it into a restart.",
-    image: "/images/features/run-walk-cycle.avif",
+    image: "/images/features/user-run2.avif",
   },
   {
     overlay: "Train",
@@ -118,7 +118,7 @@ const cluckActions = [
     ],
     closer:
       "Because the best results come from training that’s sustainable, not just intense.",
-    image: "/images/features/train.avif",
+    image: "/images/features/user-workout.avif",
   },
   {
     overlay: "FOUNDATION",
@@ -134,7 +134,7 @@ const cluckActions = [
       "Connect the whole system: see how movement, sleep, stress, and nutrition affect how your body shows up",
     ],
     closer: "Not training for sport - training for life.",
-    image: "/images/features/foundation.avif",
+    image: "/images/features/users-foundation.avif",
   },
   {
     overlay: "SLEEP & WELLBEING",
@@ -151,7 +151,7 @@ const cluckActions = [
     ],
     closer:
       "When everything is connected, the signals get clear, and better days get easier to repeat.",
-    image: "/images/features/wellness.avif",
+    image: "/images/features/user-wellbeing.avif",
   },
   {
     overlay: "NUTRITION",
@@ -167,7 +167,7 @@ const cluckActions = [
     ],
     closer:
       "You don’t need perfect tracking - you need a system you can live with.",
-    image: "/images/features/nutrition.avif",
+    image: "/images/features/user-nutrition.avif",
   },
   {
     overlay: "CYCLE & PLANNING",
@@ -183,7 +183,7 @@ const cluckActions = [
     ],
     closer:
       "You don’t have to do everything,small changes at the right time add up.",
-    image: "/images/features/cycle2.avif",
+    image: "/images/features/user-cycle.avif",
   },
 ];
 
@@ -324,6 +324,9 @@ export default function UsersPage() {
             <h2 className="text-primary text-3xl font-bold md:text-4xl lg:text-5xl">
               What you can do in Cluck
             </h2>
+            <p className="text-waterloo dark:text-manatee mt-4 text-xl md:text-2xl">
+              Cluck is for runners, walkers, and everyone in between.
+            </p>
           </div>
         </div>
       </section>

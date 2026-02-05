@@ -1,195 +1,64 @@
-What this border actually is
+It Started at a Run Club
 
-This is a two layer container, not a border property.
+Hi, I am Travis.
 
-Layer 1. Outer shell (the border)
+I moved to West Hollywood in 2024 and joined a run club because I was looking for people. Community. Fun. A reason to show up.
 
-Shape: rounded rectangle or pill
+That first run with West Hollywood Run Club was phenomenal.
+Not because of pace or performance, but because of the energy. No pressure. No egos. Just people showing up, moving their bodies, laughing, sweating, and genuinely enjoying being there.
 
-Thickness: thick, around 8 to 14px visually
+What I loved most was how simple it felt. Everyone belonged. All paces were welcome. Some days you push it. Some days you take it easy. Most of the time, you are out there because it feels good to move together.
 
-Fill: soft gradient, not solid
+That mattered to me.
 
-Opacity: semi translucent
+Outside the runs, I started to notice how scattered everything felt. People shared moments on Instagram. Conversations lived in group texts. Workouts were tracked in different apps. But there was no single place to actually belong. No space that brought it all together, whether you were moving with others or doing your own thing.
 
-Blur: very subtle, almost imperceptible
+I run. I train. I work out.
+But fitness is not just part of my life. It is something I share.
 
-Purpose: this is the border itself
+That became even more clear through my sister, Ashley. She is disabled and new here, and helping her stay active has been one of the most meaningful parts of my life. Since moving here, she walks more, takes fitness classes, and genuinely loves seeing her progress. Counting her miles. Feeling proud of what her body can do. Being part of something.
 
-Layer 2. Inner surface (the card)
+She deserves a place in fitness. So do people like her.
 
-Shape: same radius, slightly smaller
+As I looked closer, the gap was everywhere.
 
-Fill: pure white
+Run club leaders had no real tools to support their communities. Creators had audiences, but no true home. Pros were incredible, but hard to discover unless you already knew where to look. And everyday people, at every pace and ability, were left stitching things together on their own.
 
-No gradient
+Everything felt scattered.
 
-No noise
+That gap became CLUCK.
 
-Clean and flat
+Not just another app or leaderboard.
+CLUCK is a place where community actually lives, where progress is celebrated, and where everyone has a place to belong.
 
-The border is not drawn.
-It is revealed by spacing between the two layers.
+Dmitri and I created CLUCK together.
 
-Border gradient characteristics (important)
+He brings the technology and the systems thinking. The brain.
+I bring the community, the heartbeat, and the lived experience of being out there. Running, training, and building this alongside the people it is for.
 
-The gradient you want is:
+Together, we believed fitness deserved something more human.
 
-Direction: left to right
+“Not just another app or leaderboard. CLUCK is a place where community actually lives, and where everyone can be part of it.”
 
-Start color: cool pastel blue
+Travis
 
-Middle: almost white
+Founder
+Community Builder
+Chief Fitness Officer
 
-End color: soft lavender or pink
+The Team
 
-Saturation: low
+image - public/images/features/founder-ds.avif
+Dmitri S
+“The Brain”
+Co Founder and CEO, CTO
 
-Contrast: low
+image - public/images/features/founder-ts.avif
+Travis S
+“The Heartbeat”
+Co Founder and COO
 
-Alpha: around 60 to 80 percent
-
-It should feel like frosted glass light, not color paint.
-
-Example color feel (descriptive)
-
-Left: icy sky blue
-
-Center: milky white
-
-Right: pale lavender blush
-
-No harsh stops. No visible bands.
-
-Why your current approach cannot produce this
-
-Noise backgrounds and animated borders fail here because:
-
-Noise breaks edge clarity
-
-Animation adds visual tension
-
-Border becomes busy instead of elegant
-
-This effect is static, calm, editorial.
-
-Correct structural model (this is the key)
-
-Think of it like this:
-
-Outer container = gradient shell
-
-Padding = border thickness
-
-Inner container = white card
-
-The gradient lives only in the outer container background.
-
-The inner card covers the center, leaving only the edges visible.
-
-That is how the pill button works in your screenshot.
-
-Exact visual rules to follow
-
-Use these rules and it will look right immediately.
-
-Outer container
-
-Rounded radius: very high, always larger than inner
-
-Background: linear gradient, pastel
-
-No shadow or only extremely soft ambient shadow
-
-No noise
-
-No animation
-
-Inner container
-
-Radius: outer radius minus border thickness
-
-Background: pure white
-
-Slight shadow optional
-
-Content lives here
-
-Why this works visually
-
-Edges look intentional and smooth
-
-Border reads as light, not color
-
-Card feels premium and modern
-
-Matches Framer, Linear, Notion style systems
-
-This is exactly how that pill button is constructed.
-
-One sentence mental model
-
-You are not styling a border.
-You are placing a white card inside a translucent gradient shell.
-
-If you want, next I can:
-
-Give you exact hex values that match the screenshot
-
-Help you tune radius and thickness for desktop vs mobile
-
-Explain how to adapt this for dark mode without losing the effect
-
-EXAMPLE> 
-import { cn } from "@/lib/utils";
-import { NoiseBackground } from "@/components/ui/noise-background";
-
-export function NoiseBackgroundDemoSecond() {
-  return (
-    <div className="mx-auto max-w-sm">
-      <NoiseBackground
-        gradientColors={[
-          "rgb(255, 100, 150)",
-          "rgb(100, 150, 255)",
-          "rgb(255, 200, 100)",
-        ]}
-      >
-        <Card>
-          <img
-            src="https://assets.aceternity.com/blog/how-to-create-a-bento-grid.png"
-            alt="Task Complete"
-            className="h-60 w-full rounded-lg object-cover"
-          />
-          <div className="px-4 py-2">
-            <h3 className="text-left text-lg font-semibold text-balance text-neutral-800 dark:text-neutral-200">
-              How to create a bento grid with Tailwind
-            </h3>
-            <p className="mt-2 text-left text-sm text-neutral-600 dark:text-neutral-400">
-              Learn how to create a bento grid with Tailwind CSS, Next.js and
-              Framer Motion.
-            </p>
-          </div>
-        </Card>
-      </NoiseBackground>
-    </div>
-  );
-}
-
-const Card = ({
-  className,
-  children,
-}: {
-  className?: string;
-  children: React.ReactNode;
-}) => {
-  return (
-    <div
-      className={cn(
-        "flex h-full min-h-80 flex-col overflow-hidden rounded-lg bg-white text-center dark:bg-neutral-800",
-        className,
-      )}
-    >
-      {children}
-    </div>
-  );
-};
+image - public/images/features/nicole.avif
+Nicole A
+“The Backbone”
+Strategic Advisor

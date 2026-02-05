@@ -84,7 +84,7 @@ export default function CreatorsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 lg: relative z-10 mx-auto flex h-full -translate-y-[23%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[23%] md:px-8 md:pt-0 xl:px-0">
+        <div className="max-w-c-1315 lg: relative z-10 mx-auto flex h-full -translate-y-[23%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[21%] md:px-8 md:pt-0 xl:-translate-y-[24%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="text-primary mb-4.5 text-lg font-medium tracking-[4px] uppercase">
               Creators · Influencers · Community Leaders

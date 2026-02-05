@@ -6,20 +6,21 @@ import { ThemeProvider } from "next-themes";
 import ToasterContext from "../context/ToastContext";
 
 export default function ClientLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        <ThemeProvider
-            enableSystem={false}
-            attribute="class"
-            defaultTheme="light"
-        >
-            <Header />
-            <ToasterContext />
-            {children}
-            <Footer />
-        </ThemeProvider>
-    );
+  return (
+    <ThemeProvider
+      enableSystem={false}
+      attribute="class"
+      defaultTheme="light"
+      forcedTheme="light"
+    >
+      <Header />
+      <ToasterContext />
+      {children}
+      <Footer />
+    </ThemeProvider>
+  );
 }

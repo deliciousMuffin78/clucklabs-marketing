@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[27%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[24%] md:px-8 md:pt-0 xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[25%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[24%] md:px-8 md:pt-0 lg:-translate-y-[22%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-4.5 text-lg font-medium tracking-[4px] text-white uppercase">
               Individuals · Clubs · Pros · Creators

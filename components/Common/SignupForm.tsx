@@ -65,18 +65,18 @@ export default function SignupForm({
     return (
       <div
         className={`flex flex-col items-center justify-center text-center ${
-          layout === "compact" ? "py-4" : "py-10"
+          layout === "compact" ? "py-2" : "py-3"
         }`}
       >
         <div
           className={`flex items-center justify-center rounded-full bg-green-100 text-green-600 ${
-            layout === "compact" ? "mb-2 h-10 w-10" : "mb-4 h-16 w-16"
+            layout === "compact" ? "mb-2 h-10 w-10" : "mb-4 h-10 w-10"
           }`}
         >
           <svg
-            className={layout === "compact" ? "h-5 w-5" : "h-8 w-8"}
+            className={layout === "compact" ? "h-5 w-5" : "h-5 w-5"}
             fill="none"
-            viewBox="0 0 24 24"
+            viewBox="0 0 22 22"
             stroke="currentColor"
           >
             <path
@@ -88,16 +88,16 @@ export default function SignupForm({
           </svg>
         </div>
         <h3
-          className={`font-bold text-black dark:text-white ${
-            layout === "compact" ? "text-lg" : "text-2xl"
-          }`}
+          className={`font-bold ${
+            showInterests ? "text-primary" : "text-white text-shadow-lg"
+          } dark:text-white ${layout === "compact" ? "text-lg" : "text-2xl"}`}
         >
           You're on the list!
         </h3>
         <p
-          className={`text-waterloo dark:text-manatee mt-1 ${
-            layout === "compact" ? "text-sm" : ""
-          }`}
+          className={`mt-1 font-bold ${
+            showInterests ? "text-primary" : "text-white text-shadow-lg"
+          } dark:text-manatee ${layout === "compact" ? "text-sm" : "text-sm"}`}
         >
           {layout === "compact"
             ? "We'll be in touch."
@@ -105,7 +105,11 @@ export default function SignupForm({
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="text-primary mt-2 text-xs font-medium hover:underline"
+          className={`text-md mt-4 rounded-full px-8 py-1 transition-all ${
+            showInterests
+              ? "bg-primary hover:bg-primaryho text-white"
+              : "text-primary bg-white shadow-sm hover:bg-white/90"
+          }`}
         >
           Reset
         </button>
@@ -173,7 +177,7 @@ export default function SignupForm({
             <>
               {showInterests && (
                 <div className="flex flex-col items-center gap-4">
-                  <p className="text-xl font-bold tracking-[1px] text-[#d11764] uppercase">
+                  <p className="text-primary text-xl font-bold tracking-[1px] uppercase">
                     Select your interests:
                   </p>
                   <div className="flex flex-wrap justify-center gap-3">
@@ -187,12 +191,9 @@ export default function SignupForm({
                           disabled={status === "loading"}
                           className={`flex items-center gap-2 rounded-full px-5.5 py-2.5 text-lg font-medium transition-all duration-200 ${
                             isSelected
-                              ? "text-white"
+                              ? "bg-primary text-white"
                               : "bg-zumthor text-primary hover:bg-zumthor/80 dark:bg-white/10 dark:text-white"
                           }`}
-                          style={
-                            isSelected ? { backgroundColor: "#d11764" } : {}
-                          }
                         >
                           {interest}
                           {isSelected && <X size={14} />}
@@ -216,8 +217,8 @@ export default function SignupForm({
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className={`bg-primary hover:bg-primaryho flex w-full items-center justify-center rounded-full text-lg font-medium whitespace-nowrap text-white shadow-md transition-all duration-300 ${
-                  !showInterests ? "px-10 py-4" : "w-full py-6"
+                className={`bg-primary hover:bg-primaryho flex w-full items-center justify-center rounded-full text-lg font-medium whitespace-nowrap text-white transition-all duration-300 ${
+                  showInterests ? "w-full py-6" : "px-10 py-4 shadow-md"
                 }`}
               >
                 {status === "loading" ? "Processing..." : ctaText}

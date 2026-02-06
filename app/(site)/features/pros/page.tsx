@@ -74,7 +74,7 @@ export default function ProsPage() {
   return (
     <main>
       {/* Pros Hero */}
-      <section className="relative h-[100vh] min-h-[700px] w-full overflow-hidden bg-black">
+      <section className="relative h-[140vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <img
@@ -85,22 +85,22 @@ export default function ProsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 lg: relative z-10 mx-auto flex h-full -translate-y-[24%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[22%] md:px-8 md:pt-0 xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[23%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[17%] md:px-8 md:pt-0 lg:-translate-y-[17%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
-            <h4 className="text-primary mb-4.5 text-lg font-medium tracking-[4px] uppercase">
+            <h4 className="mb-2 text-[0.6rem] font-medium tracking-[4px] text-white uppercase sm:text-[0.7rem] md:mb-4.5 md:text-[0.8rem] lg:text-[0.9rem]">
               Coaches · Trainers · Nutritionists · Specialists
             </h4>
-            <h1 className="text-primary mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold md:text-[4.1rem] lg:text-[4.1rem]">
+            <h1 className="text-primary mb-3 max-w-[900px] text-2xl leading-[1.1] font-bold md:mb-6 md:text-4xl lg:text-[4.1rem]">
               You don’t need to be famous. You need to be good.
             </h1>
-            <p className="text-primary mb-10 max-w-[900px] text-xl drop-shadow-sm md:text-2xl">
+            <p className="mb-5 max-w-[900px] text-base leading-[1.4] text-white drop-shadow-sm md:text-2xl">
               Cluck helps pros deliver better outcomes, get discovered by the
               right people, and earn across coaching, programs, and plans
               without living on content and algorithms. <br />
               Free to join. We earn when you earn.
             </p>
 
-            <div className="rounded-[40px] border border-white/20 bg-white/10 p-4 backdrop-blur-sm md:p-6 lg:p-8">
+            <div className="w-[100%] rounded-[40px] border border-white/20 bg-white/10 p-3 backdrop-blur-sm md:w-auto md:p-6 lg:p-8">
               <SignupForm
                 pageName="pros"
                 showInterests={false}
@@ -183,7 +183,7 @@ export default function ProsPage() {
       </section>
 
       {/* Modern Club Management Section (Copied from About Design) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -265,7 +265,7 @@ export default function ProsPage() {
       </section>
 
       {/* Rewards & Sponsors Section (Flipped Design) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -364,7 +364,7 @@ export default function ProsPage() {
       </section>
 
       {/* Purpose + Progress Section (Image Left) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -462,7 +462,7 @@ export default function ProsPage() {
       </section>
 
       {/* Add Pros Section (Image Right) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -545,9 +545,9 @@ export default function ProsPage() {
       </section>
 
       {/* Local feel, global reach Section (Image Left) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
+          <div className="flex flex-col items-center gap-4 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
                 src="/images/features/fit-over-clout.avif"
@@ -627,9 +627,9 @@ export default function ProsPage() {
       </section>
 
       {/* Better for them, too Section (Image Right) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
+          <div className="flex flex-col items-center gap-4 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
               <Image
                 src="/images/features/pro-clinic.avif"
@@ -713,7 +713,7 @@ export default function ProsPage() {
       </section>
 
       {/* <!-- Revenue Section (Image Left) --> */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -810,7 +810,7 @@ export default function ProsPage() {
       </section>
 
       {/* <!-- Sponsorships Section (Image Right) --> */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">

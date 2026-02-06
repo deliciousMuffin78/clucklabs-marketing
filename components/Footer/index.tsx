@@ -40,18 +40,18 @@ const Footer = () => {
               >
                 <a href="/" className="relative">
                   <Image
-                    width={110}
+                    width={200}
                     height={80}
                     src="/images/logo/logo-light.png"
                     alt="Logo"
-                    className="dark:hidden"
+                    className="h-auto w-full max-w-[200px] dark:hidden"
                   />
                   <Image
-                    width={110}
-                    height={80}
+                    width={180}
+                    height={60}
                     src="/images/logo/logo-dark.png"
                     alt="Logo"
-                    className="hidden dark:block"
+                    className="hidden h-auto w-full max-w-[160px] dark:block"
                   />
                 </a>
 

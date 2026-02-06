@@ -24,7 +24,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Content Section */}
-      <section className="pb-24 lg:pb-32">
+      <section className="pb-5 lg:pb-20">
         <div className="max-w-c-1154 mx-auto px-4 md:px-8 xl:px-0">
           {/* Top Story - Full Width */}
           <div className="mb-16">

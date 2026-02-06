@@ -67,7 +67,7 @@ export default function BrandsPage() {
   return (
     <main>
       {/* Brands Hero */}
-      <section className="relative h-[100vh] min-h-[700px] w-full overflow-hidden bg-black">
+      <section className="relative h-[110vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <img
@@ -78,23 +78,23 @@ export default function BrandsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[24%] items-center justify-center px-4 text-center md:-translate-y-[20%] md:px-8 xl:-translate-y-[23%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[17%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[20%] md:px-8 md:pt-0 lg:-translate-y-[20%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
-            <h4 className="text-primary mb-4.5 text-lg font-medium tracking-[4px] uppercase">
+            <h4 className="mb-2 text-[0.7rem] font-medium tracking-[4px] text-white uppercase sm:text-[0.7rem] md:mb-4.5 md:text-[0.8rem] lg:text-[1.0rem]">
               Brands · Local Businesses · Sponsors · Partners
             </h4>
-            <h1 className="text-primary mb-6 max-w-[900px] text-4xl leading-[1.1] font-bold md:text-5xl lg:text-6xl xl:text-[4.1rem]">
+            <h1 className="text-primary mb-3 max-w-[900px] text-2xl leading-[1.1] font-bold md:mb-6 md:text-5xl lg:text-[4.1rem]">
               Get real people to show up. <br />
               Pay for outcomes, not ads.
             </h1>
-            <p className="text-primary mb-10 max-w-[900px] text-xl md:text-2xl">
+            <p className="text-primary mb-5 max-w-[900px] text-base leading-[1.4] md:text-2xl">
               Cluck turns movement into measurable action: visits,
               participation, redemptions, and repeat customers powered by clubs,
               creators, and pros. No upfront spend. You fund results when they
               happen.
             </p>
 
-            <div className="rounded-[40px] border border-white/20 bg-white/10 p-4 backdrop-blur-sm md:p-6 lg:p-8">
+            <div className="w-[100%] rounded-[40px] border border-white/20 bg-white/10 p-3 backdrop-blur-sm md:w-auto md:p-6 lg:p-8">
               <SignupForm
                 pageName="brands"
                 showInterests={false}
@@ -106,7 +106,7 @@ export default function BrandsPage() {
       </section>
 
       {/* Features Grid Section */}
-      <section className="py-20 lg:py-20">
+      <section className="py-10 lg:py-20">
         <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           {/* Section Header */}
           <div className="mx-auto mb-16 max-w-[900px] text-center md:mb-24">
@@ -295,7 +295,7 @@ export default function BrandsPage() {
       </section>
 
       {/* Effort Level Section (Two Columns) */}
-      <section className="relative overflow-hidden py-10 lg:py-20">
+      <section className="relative overflow-hidden py-10 pb-15 lg:py-20">
         <MeshGradient />
         <div className="max-w-c-1315 relative z-10 mx-auto px-4 md:px-8 xl:px-0">
           {/* Outer Shell (The thick translucent frame) */}
@@ -481,7 +481,7 @@ export default function BrandsPage() {
       </section>
 
       {/* Rewards at Scale Section (Image Left) */}
-      <section className="overflow-hidden py-10 pb-20 lg:py-10 lg:pb-32">
+      <section className="overflow-hidden py-10 pb-10 lg:py-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -579,7 +579,7 @@ export default function BrandsPage() {
       </section>
 
       {/* Confidence Section (Image Left) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -661,7 +661,7 @@ export default function BrandsPage() {
       </section>
 
       {/* Earned Attention Section (Image Right) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">

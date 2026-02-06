@@ -64,7 +64,7 @@ export default function ClubsPage() {
   return (
     <main>
       {/* Club Hero */}
-      <section className="relative h-[100vh] min-h-[700px] w-full overflow-hidden bg-black">
+      <section className="relative h-[120vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <img
@@ -75,18 +75,17 @@ export default function ClubsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 text-center md:px-8 xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[15%] md:px-8 md:pt-0 lg:-translate-y-[15%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
-            <h4 className="mb-4.5 text-lg font-medium tracking-[4px] text-white uppercase">
+            <h4 className="mb-2 text-[0.9rem] font-medium tracking-[4px] text-white uppercase md:mb-4.5 md:text-[0.8rem] lg:text-lg">
               Clubs & Communities
             </h4>
-            <h1 className="mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold text-white md:text-5xl lg:text-[4.5rem]">
-              {/*<h1 className="mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold text-white md:text-5xl lg:text-[4.5rem]"> */}
+            <h1 className="mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold text-white md:mb-6 md:text-5xl lg:text-[4.5rem]">
               Run your club. <br />
               Grow your community. <br />
               <span className="text-primary">Get paid.</span>
             </h1>
-            <p className="mb-10 max-w-[900px] text-xl text-white drop-shadow-sm md:text-2xl">
+            <p className="mb-5 max-w-[900px] text-base leading-[1.4] text-white drop-shadow-sm md:text-2xl">
               Cluck brings your club’s communication, events, challenges,
               leaderboards, and programming into one place. Powered by member
               activity so it’s easier to organize, easier to grow, and easier to
@@ -95,10 +94,10 @@ export default function ClubsPage() {
             </p>
 
             <div className="flex w-full justify-center">
-              <div className="rounded-[40px] border border-white/20 bg-white/10 p-4 backdrop-blur-sm md:p-6 lg:p-8">
+              <div className="w-[100%] rounded-[40px] border border-white/20 bg-white/10 p-3 backdrop-blur-sm md:w-auto md:p-6 lg:p-8">
                 <SignupForm
                   ctaText="Get Early Access"
-                  description="Early access invites. No pressure. No spam."
+                  description="Early access invites. No spam."
                   showInterests={false}
                   pageName="clupspage"
                   descriptionClassName="text-primary/70"

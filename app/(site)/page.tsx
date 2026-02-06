@@ -31,7 +31,7 @@ export default function Home() {
     <main className="relative overflow-hidden">
       <MeshGradient />
       {/* Hero */}
-      <section className="relative h-[100vh] min-h-[700px] w-full overflow-hidden bg-black">
+      <section className="relative h-[110vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <img
@@ -42,29 +42,29 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[25%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[24%] md:px-8 md:pt-0 lg:-translate-y-[22%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[17%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[22%] md:px-8 md:pt-0 lg:-translate-y-[20%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
-            <h4 className="mb-4.5 text-lg font-medium tracking-[4px] text-white uppercase">
+            <h4 className="mb-2 text-[0.6rem] font-medium tracking-[4px] text-white uppercase sm:text-[0.7rem] md:mb-4.5 md:text-[0.8rem] lg:text-[0.9rem]">
               Individuals · Clubs · Pros · Creators
             </h4>
-            <h1 className="mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold text-white md:text-5xl lg:text-[4.5rem]">
+            <h1 className="mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold text-white md:mb-6 md:text-5xl lg:text-[4.5rem]">
               One app. Total clarity. <br />
               <span className="text-primary">Ecosystem for progress.</span>
             </h1>
-            <p className="mb-10 max-w-[900px] text-xl text-white drop-shadow-sm md:text-2xl">
+            <p className="mb-5 max-w-[900px] text-base leading-[1.4] text-white drop-shadow-sm md:text-2xl">
               Cluck connects training, recovery, food, sleep, and community so
               you get clear signals and a smarter next step without
               overthinking.
             </p>
 
             <div className="flex w-full justify-center">
-              <div className="rounded-[40px] border border-white/20 bg-white/10 p-4 backdrop-blur-sm md:p-6 lg:p-8">
+              <div className="w-[100%] rounded-[40px] border border-white/20 bg-white/10 p-3 backdrop-blur-sm md:w-auto md:p-6 lg:p-8">
                 <SignupForm
                   ctaText="Get Early Access"
-                  description="Early access invites. No pressure. No spam."
+                  description="Early access invites. No spam."
                   showInterests={false}
                   pageName="homepage"
-                  descriptionClassName="text-white/70"
+                  descriptionClassName="text-white/100"
                 />
               </div>
             </div>
@@ -110,8 +110,8 @@ export default function Home() {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#1884be] uppercase">
-                    INDIVIDUALS | MEMBERS
+                  <h4 className="text-md mb-6 inline-block self-center rounded-full bg-white/100 px-10 py-5 font-semibold tracking-[4px] text-[#1884be] uppercase md:text-2xl">
+                    INDIVIDUALS
                   </h4>
                   <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
                     Your next step, made obvious.
@@ -146,7 +146,7 @@ export default function Home() {
 
                   <a
                     href="/features/users"
-                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-10 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300 md:px-40"
                   >
                     See details
                   </a>
@@ -182,7 +182,7 @@ export default function Home() {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#f05a28] uppercase">
+                  <h4 className="text-md mb-6 inline-block self-center rounded-full bg-white/100 px-10 py-5 font-semibold tracking-[4px] text-[#f05a28] uppercase md:text-2xl">
                     CLUBS
                   </h4>
                   <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
@@ -218,7 +218,7 @@ export default function Home() {
 
                   <a
                     href="/features/clubs"
-                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-10 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300 md:px-40"
                   >
                     See details
                   </a>
@@ -250,7 +250,7 @@ export default function Home() {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#6b3fa0] uppercase">
+                  <h4 className="text-md mb-6 inline-block self-center rounded-full bg-white/100 px-10 py-5 font-semibold tracking-[4px] text-[#6b3fa0] uppercase md:text-2xl">
                     PROS
                   </h4>
                   <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
@@ -287,7 +287,7 @@ export default function Home() {
 
                   <a
                     href="/features/pros"
-                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-10 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300 md:px-40"
                   >
                     See details
                   </a>
@@ -323,7 +323,7 @@ export default function Home() {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#d11764] uppercase">
+                  <h4 className="text-md mb-6 inline-block self-center rounded-full bg-white/100 px-10 py-5 font-semibold tracking-[4px] text-[#d11764] uppercase md:text-2xl">
                     CREATORS
                   </h4>
                   <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
@@ -359,7 +359,7 @@ export default function Home() {
 
                   <a
                     href="/features/creators"
-                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-10 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300 md:px-40"
                   >
                     See details
                   </a>
@@ -391,7 +391,7 @@ export default function Home() {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                  <h4 className="mb-6 inline-block self-center rounded-full bg-white/100 px-25 py-5 text-2xl font-semibold tracking-[4px] text-[#3fa36c] uppercase">
+                  <h4 className="text-md mb-6 inline-block self-center rounded-full bg-white/100 px-10 py-5 font-semibold tracking-[4px] text-[#3fa36c] uppercase md:text-2xl">
                     BRANDS
                   </h4>
                   <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
@@ -429,7 +429,7 @@ export default function Home() {
 
                   <a
                     href="/features/brands"
-                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-40 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300"
+                    className="hover:bg-primaryho inline-block self-center rounded-full bg-[#0f0f14] px-10 py-5.5 text-lg font-medium text-white uppercase shadow-2xl transition-all duration-300 md:px-40"
                   >
                     See details
                   </a>

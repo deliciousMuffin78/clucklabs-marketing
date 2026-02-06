@@ -275,7 +275,7 @@ export default function UsersPage() {
   return (
     <main>
       {/* User Hero */}
-      <section className="relative h-[100vh] min-h-[700px] w-full overflow-hidden bg-black">
+      <section className="relative h-[120vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <img
@@ -286,16 +286,16 @@ export default function UsersPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[24%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[23%] md:px-8 md:pt-0 xl:-translate-y-[24%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[20%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[20%] md:px-8 md:pt-0 lg:-translate-y-[20%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
-            <h4 className="mb-4.5 text-lg font-medium tracking-[4px] text-white uppercase">
-              Individuals · Members · Humans
+            <h4 className="mb-2 text-[0.8rem] font-medium tracking-[4px] text-white uppercase sm:text-[0.7rem] md:mb-4.5 md:text-[0.8rem] lg:text-[0.9rem]">
+              Individuals · Members
             </h4>
-            <h1 className="mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold text-white md:text-5xl lg:text-[4.5rem]">
+            <h1 className="mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold text-white md:mb-6 md:text-5xl lg:text-[4.5rem]">
               One app. Fewer guesses. <br />
               <span className="text-primary">Better days. Real life.</span>
             </h1>
-            <p className="mb-10 max-w-[900px] text-xl text-white drop-shadow-sm md:text-2xl">
+            <p className="mb-5 max-w-[900px] text-base leading-[1.4] text-white drop-shadow-sm md:text-2xl">
               Cluck brings movement, recovery, food, sleep, and community
               together so you get clear signals and a smarter next step, even
               when life gets busy. <br />
@@ -303,10 +303,10 @@ export default function UsersPage() {
             </p>
 
             <div className="flex w-full justify-center">
-              <div className="rounded-[40px] border border-white/20 bg-white/10 p-4 backdrop-blur-sm md:p-6 lg:p-8">
+              <div className="w-[100%] rounded-[40px] border border-white/20 bg-white/10 p-4 backdrop-blur-sm md:w-auto md:p-6 lg:p-8">
                 <SignupForm
                   ctaText="Get Early Access"
-                  description="Early access invites. No pressure. No spam."
+                  description="Early access invites. No spam."
                   showInterests={false}
                   pageName="users"
                   descriptionClassName="text-white/70"
@@ -346,7 +346,7 @@ export default function UsersPage() {
           <div className="rounded-[40px] border border-white/20 bg-white/30 p-4 shadow-xl backdrop-blur-xl md:p-6 dark:bg-white/5">
             {/* Inner Container */}
             <div className="dark:bg-blacksection relative z-10 rounded-[28px] bg-white px-7.5 py-12.5 text-center shadow-sm md:px-12.5 lg:py-15 xl:px-17.5 xl:py-20">
-              <h4 className="bg-zumthor text-primary mb-4 inline-block rounded-full px-4.5 py-1.5 text-lg font-semibold tracking-[4px] uppercase dark:bg-white/10">
+              <h4 className="bg-zumthor text-primary md: text-lgfont-semibold mb-4 inline-block rounded-full px-4.5 py-1.5 text-sm tracking-[4px] uppercase md:text-xl dark:bg-white/10">
                 Starting over · Starting fresh · Just starting
               </h4>
               <p className="text-primary mb-4 text-sm font-bold tracking-widest uppercase">

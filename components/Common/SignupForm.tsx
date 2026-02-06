@@ -18,7 +18,7 @@ interface SignupFormProps {
 export default function SignupForm({
   initialInterests = [],
   ctaText = "Get early access",
-  description = "Early access invites. No pressure. No spam.",
+  description = "Early access invites. No spam.",
   showInterests = true,
   pageName = "homepage",
   descriptionClassName = "text-primary",
@@ -116,7 +116,9 @@ export default function SignupForm({
   return (
     <div
       className={`flex w-full flex-col ${
-        layout === "compact" ? "items-start gap-3" : "items-center gap-5"
+        layout === "compact"
+          ? "items-center gap-3 md:items-start"
+          : "items-center gap-5"
       }`}
     >
       <form
@@ -151,7 +153,7 @@ export default function SignupForm({
                 disabled={status === "loading"}
                 className={`border-primary/30 focus:border-primary flex-1 rounded-full border-2 bg-white text-black placeholder:text-black/60 focus:outline-hidden sm:border-none sm:bg-transparent dark:border-white/30 dark:bg-black dark:text-white dark:placeholder:text-white/70 sm:dark:bg-transparent ${
                   layout === "compact"
-                    ? "px-4 py-2 text-base sm:px-4 sm:py-2"
+                    ? "px-5 py-3.5 text-base sm:px-4 sm:py-3"
                     : "px-6 py-4 text-base sm:px-4 sm:py-2"
                 }`}
               />
@@ -160,7 +162,7 @@ export default function SignupForm({
                 disabled={status === "loading"}
                 className={`bg-primary hover:bg-primaryho flex items-center justify-center rounded-full font-medium whitespace-nowrap text-white shadow-md transition-all duration-300 ${
                   layout === "compact"
-                    ? "px-6 py-2.5 text-base sm:py-2"
+                    ? "px-8 py-3.5 text-base sm:py-3"
                     : "px-10 py-4 text-lg sm:py-3"
                 }`}
               >
@@ -226,7 +228,7 @@ export default function SignupForm({
       </form>
       {description && (
         <p
-          className={`${descriptionClassName} text-sm font-medium tracking-wide uppercase`}
+          className={`${descriptionClassName} text-center text-sm font-medium tracking-wide uppercase md:text-left`}
         >
           {description}
         </p>

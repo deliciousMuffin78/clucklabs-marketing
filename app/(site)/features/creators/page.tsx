@@ -73,7 +73,7 @@ export default function CreatorsPage() {
   return (
     <main>
       {/* Creators Hero */}
-      <section className="relative h-[100vh] min-h-[700px] w-full overflow-hidden bg-black">
+      <section className="relative h-[120vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <img
@@ -84,23 +84,23 @@ export default function CreatorsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 lg: relative z-10 mx-auto flex h-full -translate-y-[23%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[21%] md:px-8 md:pt-0 xl:-translate-y-[24%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[20%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[20%] md:px-8 md:pt-0 lg:-translate-y-[20%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
-            <h4 className="text-primary mb-4.5 text-lg font-medium tracking-[4px] uppercase">
-              Creators · Influencers · Community Leaders
+            <h4 className="text-primary mb-2 text-[0.6rem] font-medium tracking-[4px] uppercase sm:text-[0.7rem] md:mb-4.5 md:text-lg lg:text-lg">
+              Creators · Influencers · Leaders
             </h4>
-            <h1 className="text-primary mb-6 max-w-[900px] text-5xl leading-[1.1] font-bold md:text-[3.8rem] lg:text-[3.8rem]">
+            <h1 className="text-primary mb-3 max-w-[900px] text-2xl leading-[1.1] font-bold md:mb-6 md:text-[3.8rem] lg:text-[3.8rem]">
               Turn attention into momentum. <br />
               Turn momentum into income.
             </h1>
-            <p className="text-primary mb-10 max-w-[900px] text-xl md:text-2xl">
+            <p className="text-primary mb-5 max-w-[900px] text-base leading-[1.4] md:text-2xl">
               Cluck helps you run challenges, drop programs, and build a
               community people actually show up for, while signups,
               verification, prizes, payments, and payouts happen in one place.
-              Free. Cluck earns when you do.
+              Cluck earns when you do.
             </p>
 
-            <div className="rounded-[40px] border border-black/7 bg-black/7 p-4 backdrop-blur-sm md:p-6 lg:p-8">
+            <div className="w-[100%] rounded-[40px] border border-white/20 bg-white/10 p-3 backdrop-blur-sm md:w-auto md:p-6 lg:p-8">
               <SignupForm
                 pageName="creators"
                 showInterests={false}
@@ -112,7 +112,7 @@ export default function CreatorsPage() {
       </section>
 
       {/* Features Grid Section */}
-      <section className="py-20 lg:py-20">
+      <section className="py-10 lg:py-20">
         <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           {/* Section Header */}
           <div className="mx-auto mb-16 max-w-[900px] text-center md:mb-24">
@@ -183,7 +183,7 @@ export default function CreatorsPage() {
       </section>
 
       {/* MORE THAN ONE PAYDAY Section */}
-      <section className="overflow-hidden pt-20 pb-20 lg:pt-10 lg:pb-30">
+      <section className="overflow-hidden pt-10 pb-10 lg:pt-10 lg:pb-20">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-6 md:gap-8 lg:gap-0">
             <div className="w-full max-w-[900px]">
@@ -295,7 +295,7 @@ export default function CreatorsPage() {
       </section>
 
       {/* Business Ops Section */}
-      <section className="overflow-hidden pt-20 pb-20 lg:pt-10 lg:pb-30">
+      <section className="overflow-hidden pt-10 pb-10 lg:pt-10 lg:pb-30">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-6 md:gap-8 lg:gap-0">
             <div className="w-full max-w-[900px]">
@@ -387,7 +387,7 @@ export default function CreatorsPage() {
       </section>
 
       {/* Modern Club Management Section (Copied from About Design) */}
-      <section className="overflow-hidden pb-20 lg:pb-20">
+      <section className="overflow-hidden pb-10 lg:pb-20">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -472,7 +472,7 @@ export default function CreatorsPage() {
       </section>
 
       {/* Content Hub Section (Image Right) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">
@@ -569,7 +569,7 @@ export default function CreatorsPage() {
       </section>
 
       {/* Momentum Section (Image Left) */}
-      <section className="overflow-hidden pb-20 lg:pb-32">
+      <section className="overflow-hidden pb-10 lg:pb-32">
         <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col items-center gap-8 md:flex-row lg:gap-32.5">
             <div className="relative mx-auto aspect-[588/526.5] w-full md:w-1/2">

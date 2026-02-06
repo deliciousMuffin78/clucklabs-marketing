@@ -5,6 +5,11 @@ const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   devIndicators: false,
+  // Next.js 16 Turbopack Configuration
+  turbopack: {
+    // Helps with module resolution in CI environments like Amplify
+    root: __dirname, 
+  },
   images: {
     unoptimized: true,
     formats: ["image/avif", "image/webp"],

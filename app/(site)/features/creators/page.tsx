@@ -84,12 +84,12 @@ export default function CreatorsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[20%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[20%] md:px-8 md:pt-0 lg:-translate-y-[20%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[5%] md:px-8 md:pt-0 xl:-translate-y-[15%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="text-primary mb-2 text-[0.6rem] font-medium tracking-[4px] uppercase sm:text-[0.7rem] md:mb-4.5 md:text-lg lg:text-lg">
               Creators · Influencers · Leaders
             </h4>
-            <h1 className="text-primary mb-3 max-w-[900px] text-2xl leading-[1.1] font-bold md:mb-6 md:text-[3.8rem] lg:text-[3.8rem]">
+            <h1 className="text-primary mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold md:mb-6 md:text-5xl xl:text-[4.0rem]">
               Turn attention into momentum. <br />
               Turn momentum into income.
             </h1>

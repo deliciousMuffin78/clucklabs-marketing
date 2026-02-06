@@ -85,12 +85,12 @@ export default function ProsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[23%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[17%] md:px-8 md:pt-0 lg:-translate-y-[17%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[5%] md:px-8 md:pt-0 xl:-translate-y-[15%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-2 text-[0.6rem] font-medium tracking-[4px] text-white uppercase sm:text-[0.7rem] md:mb-4.5 md:text-[0.8rem] lg:text-[0.9rem]">
               Coaches · Trainers · Nutritionists · Specialists
             </h4>
-            <h1 className="text-primary mb-3 max-w-[900px] text-2xl leading-[1.1] font-bold md:mb-6 md:text-4xl lg:text-[4.1rem]">
+            <h1 className="text-primary mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold md:mb-6 md:text-5xl xl:text-[4.5rem]">
               You don’t need to be famous. You need to be good.
             </h1>
             <p className="mb-5 max-w-[900px] text-base leading-[1.4] text-white drop-shadow-sm md:text-2xl">

@@ -78,12 +78,12 @@ export default function BrandsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[17%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[20%] md:px-8 md:pt-0 lg:-translate-y-[20%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[5%] md:px-8 md:pt-0 xl:-translate-y-[15%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-2 text-[0.7rem] font-medium tracking-[4px] text-white uppercase sm:text-[0.7rem] md:mb-4.5 md:text-[0.8rem] lg:text-[1.0rem]">
               Brands · Local Businesses · Sponsors · Partners
             </h4>
-            <h1 className="text-primary mb-3 max-w-[900px] text-2xl leading-[1.1] font-bold md:mb-6 md:text-5xl lg:text-[4.1rem]">
+            <h1 className="text-primary mb-3 max-w-[900px] text-2xl leading-[1.1] font-bold md:mb-6 md:text-5xl xl:text-[4.0rem]">
               Get real people to show up. <br />
               Pay for outcomes, not ads.
             </h1>

@@ -75,12 +75,12 @@ export default function ClubsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[15%] md:px-8 md:pt-0 lg:-translate-y-[15%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[0%] md:px-8 md:pt-0 xl:-translate-y-[15%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-2 text-[0.9rem] font-medium tracking-[4px] text-white uppercase md:mb-4.5 md:text-[0.8rem] lg:text-lg">
               Clubs & Communities
             </h4>
-            <h1 className="mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold text-white md:mb-6 md:text-5xl lg:text-[4.5rem]">
+            <h1 className="mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold text-white md:mb-6 md:text-5xl xl:text-[4.5rem]">
               Run your club. <br />
               Grow your community. <br />
               <span className="text-primary">Get paid.</span>

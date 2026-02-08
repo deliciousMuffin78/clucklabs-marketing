@@ -687,7 +687,7 @@ export default function ClubsPage() {
               <p className="text-waterloo dark:text-manatee mb-8 text-lg">
                 Because members use Cluck for their own routine, the club
                 becomes easier to participate in and more fun to stay connected
-                to—before, during, and after every event or challenge.
+                to before, during, and after every event or challenge.
               </p>
 
               <div className="flex flex-col gap-6">

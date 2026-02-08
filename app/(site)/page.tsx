@@ -531,7 +531,7 @@ export default function Home() {
                 <span className="text-primary">who create progress.</span>
               </h2>
               <p className="text-waterloo dark:text-manatee mx-auto max-w-[700px] text-lg">
-                Members train inside Cluck—then clubs, pros, creators, and
+                Members train inside Cluck, then clubs, pros, creators, and
                 brands plug in to make showing up easier and more rewarding.
               </p>
             </div>

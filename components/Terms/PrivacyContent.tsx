@@ -53,7 +53,7 @@ export default function PrivacyContent({ showTitle = true, className = "" }: Pri
             Cluck provides fitness, wellness, educational, organizational, and lifestyle-oriented tools, including optional AI-powered insights and goal-oriented features. Cluck is not a medical provider, does not provide medical services, and does not establish a doctor-patient or other healthcare relationship.
           </p>
           <p className="mb-4 text-body-color">
-            Information collected or generated through the Services—including any health-, fitness-, or activity-related information—is used solely to support the functionality of the Services and is not intended for diagnosis, treatment, prevention, or cure of any disease or medical condition.
+            Information collected or generated through the Services,including any health, fitness, or activity related information is used solely to support the functionality of the Services and is not intended for diagnosis, treatment, prevention, or cure of any disease or medical condition.
           </p>
         </section>
 
@@ -248,7 +248,7 @@ export default function PrivacyContent({ showTitle = true, className = "" }: Pri
             <div>
               <h3 className="font-semibold text-black dark:text-white mb-2">3. Optional Features and AI-Powered Functionality</h3>
               <p className="text-body-color mb-3">
-                If you enable optional features—such as Cluck Intelligence—certain limited Health Information or related contextual data may be transmitted to and processed by third-party cloud hosting providers and artificial intelligence technology partners.
+                If you enable optional features, such as Cluck Intelligence, certain limited Health Information or related contextual data may be transmitted to and processed by third-party cloud hosting providers and artificial intelligence technology partners.
               </p>
               <ul className="list-disc pl-6 text-body-color space-y-2">
                 <li>Only the minimum information reasonably necessary to generate the requested functionality is transmitted.</li>
@@ -591,7 +591,7 @@ export default function PrivacyContent({ showTitle = true, className = "" }: Pri
             Cluck content, features, or Services may be made available on, embedded within, or integrated with Third-Party Services, or Cluck may otherwise utilize Third-Party Services to host, distribute, promote, or remarket content.
           </p>
           <p className="mb-4 text-body-color">
-            Cluck does not control how Third-Party Services collect, use, or disclose information once you interact with those platforms. Any information you provide or actions you take on Third-Party Services are governed by the applicable third party's privacy policy and terms—not this Privacy Policy.
+            Cluck does not control how Third-Party Services collect, use, or disclose information once you interact with those platforms. Any information you provide or actions you take on Third-Party Services are governed by the applicable third party's privacy policy and termsnot this Privacy Policy.
           </p>
           <p className="mb-4 text-body-color">
             Third-Party Services may use cookies, pixels, mobile identifiers, or similar technologies to collect information about your activity across websites and applications for purposes such as analytics, advertising, or remarketing. Cluck is not responsible for such technologies or data practices.

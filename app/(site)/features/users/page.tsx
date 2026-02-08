@@ -118,7 +118,7 @@ const cluckActions = [
     ],
     closer:
       "Because the best results come from training that’s sustainable, not just intense.",
-    image: "/images/features/user-workout.avif",
+    image: "/images/features/user-train.avif",
   },
   {
     overlay: "FOUNDATION",

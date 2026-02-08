@@ -10,8 +10,9 @@ const archivo = Archivo({
 
 export const metadata: Metadata = {
   title:
-    "Cluck | Train Better Together: Clubs, Pros, Creators, Brands & Members",
-  description: "Built with Next.js and TypeScript",
+    "Cluck | Move Better Together: Clubs, Pros, Creators, Members & Brands",
+  description:
+    "Cluck connects running, walking, training, recovery, food, sleep, and community so your next step is clear, simple, and easier to repeat.",
   icons: {
     icon: "/images/favicon.ico",
   },

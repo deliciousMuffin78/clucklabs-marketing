@@ -45,17 +45,21 @@ export default function Home() {
         <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[0%] md:px-8 md:pt-0 xl:-translate-y-[15%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-2 text-[0.6rem] font-medium tracking-[4px] text-white uppercase sm:text-[0.7rem] md:mb-4.5 md:text-[0.8rem] lg:text-[0.9rem]">
-              Individuals · Clubs · Pros · Creators
+              Clubs · Individuals · Pros
             </h4>
-            <h1 className="mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold text-white md:mb-6 md:text-5xl lg:text-[4.5rem]">
-              One app. Total clarity. <br />
-              <span className="text-primary">Ecosystem for progress.</span>
+            <h1 className="text-primary mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold md:mb-6 md:text-5xl lg:text-[4.5rem]">
+              It's What You Do
             </h1>
-            <p className="mb-5 max-w-[900px] text-base leading-[1.4] text-white drop-shadow-sm md:text-2xl">
-              Cluck connects training, recovery, food, sleep, and community so
-              you get clear signals and a smarter next step without
-              overthinking.
+            <p className="mb-0 max-w-[900px] text-lg leading-[1.4] text-white drop-shadow-sm md:text-3xl">
+              Cluck connects running, walking, training, recovery, food, sleep,
+              and community so you get clear signals and a smarter next step
+              without overthinking.
             </p>
+            <div className="my-4 inline-block rounded-full bg-[#1884be]/80 px-8 py-2 backdrop-blur-sm">
+              <p className="text-base font-bold text-white md:text-lg">
+                Coming Spring - Summer 2026
+              </p>
+            </div>
 
             <div className="flex w-full justify-center">
               <div className="w-[100%] rounded-[40px] border border-white/20 bg-white/10 p-3 backdrop-blur-sm md:w-auto md:p-6 lg:p-8">
@@ -73,10 +77,10 @@ export default function Home() {
       </section>
 
       {/* <!-- Feature Sections Grid --> */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
-          <div className="mb-15 text-center">
-            <h2 className="text-3xl font-bold tracking-[8px] text-black uppercase md:text-4xl lg:text-5xl dark:text-white">
+          <div className="mb-5 text-center md:mb-15">
+            <h2 className="text-xl font-bold tracking-[8px] text-black uppercase md:text-4xl lg:text-5xl dark:text-white">
               CHOOSE YOUR PATH
             </h2>
           </div>

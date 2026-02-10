@@ -14,6 +14,10 @@ import {
   Award,
   Heart,
   ChevronDown,
+  Lock,
+  BadgeCheck,
+  Star,
+  Trophy,
 } from "lucide-react";
 import MeshGradient from "@/components/Common/MeshGradient";
 import { NoiseBackground } from "@/components/ui/noise-background";
@@ -275,18 +279,18 @@ export default function UsersPage() {
   return (
     <main>
       {/* User Hero */}
-      <section className="relative h-[120vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
+      <section className="relative h-[110vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero/users-app.avif"
             alt="User Hero Background"
-            className="h-full w-full object-cover md:object-cover"
+            className="h-full w-full object-cover"
           />
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[7%] md:px-8 md:pt-0 xl:-translate-y-[15%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[28%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[14%] md:px-8 md:pt-0 xl:-translate-y-[28%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-2 text-[0.8rem] font-medium tracking-[4px] text-white uppercase sm:text-[0.7rem] md:mb-4.5 md:text-[0.8rem] xl:text-[0.9rem]">
               Individuals · Members
@@ -295,21 +299,67 @@ export default function UsersPage() {
               One app. Fewer guesses. <br />
               <span className="text-primary">Better days. Real life.</span>
             </h1>
-            <p className="mb-5 max-w-[900px] text-base leading-[1.4] text-white drop-shadow-sm md:text-2xl xl:text-2xl lg:text-2xl">
+            <p className="mb-5 max-w-[900px] text-base leading-[1.4] text-white drop-shadow-sm md:text-2xl lg:text-2xl xl:text-2xl">
               Cluck brings movement, recovery, food, sleep, and community
               together so you get clear signals and a smarter next step, even
               when life gets busy. Don’t have a goal? Perfect.
             </p>
+          </div>
+        </div>
+      </section>
 
-            <div className="flex w-full justify-center">
-              <div className="w-[100%] rounded-[40px] border border-white/20 bg-white/10 p-4 backdrop-blur-sm md:w-auto md:p-6 lg:p-8">
+      {/* Unified Signup Form Section - Below Header/Hero for all devices */}
+      <section className="relative z-30 -mt-10 px-4 pb-10 md:-mt-20">
+        <div className="mx-auto max-w-5xl">
+          <div className="overflow-hidden rounded-[40px] border border-white/20 bg-white/90 p-1 shadow-2xl backdrop-blur-md md:p-2 lg:bg-white/95">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              {/* Left Column: Form */}
+              <div className="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
                 <SignupForm
                   ctaText="Get Early Access"
                   description="Early access invites. No spam."
                   showInterests={false}
                   pageName="users"
-                  descriptionClassName="text-white/70"
+                  descriptionClassName="text-black/60"
                 />
+              </div>
+
+              {/* Right Column: Benefits */}
+              <div className="bg-primary/5 flex flex-col justify-center rounded-[32px] p-6 sm:p-10 lg:p-12">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary/10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+                      <Lock size={18} className="text-[#1884be]" />
+                    </div>
+                    <p className="text-sm font-bold text-black/80">
+                      12 Month Rate Lock
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary/10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+                      <BadgeCheck size={18} className="text-[#3fa36c]" />
+                    </div>
+                    <p className="text-sm font-bold text-black/80">
+                      Lifetime Verified Badge
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary/10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+                      <Star size={18} className="text-[#f05a28]" />
+                    </div>
+                    <p className="text-sm font-bold text-black/80">
+                      First Cluck Event VIP Access
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary/10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+                      <Trophy size={18} className="text-[#6b3fa0]" />
+                    </div>
+                    <p className="text-sm font-bold text-black/80">
+                      Win 1 Year Of Premium
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

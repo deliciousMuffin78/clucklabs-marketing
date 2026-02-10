@@ -17,6 +17,9 @@ import {
   BarChart3,
   Star,
   CheckCircle2,
+  Lock,
+  BadgeCheck,
+  Trophy,
 } from "lucide-react";
 import MeshGradient from "@/components/Common/MeshGradient";
 import { NoiseBackground } from "@/components/ui/noise-background";
@@ -64,44 +67,89 @@ export default function ClubsPage() {
   return (
     <main>
       {/* Club Hero */}
-      <section className="relative h-[120vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
+      <section className="relative h-[110vh] min-h-[700px] w-full overflow-hidden bg-white md:h-[100vh]">
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero/hero1.avif"
+            src="/images/hero/hero-club-v2.avif"
             alt="Club Hero Background"
             className="h-full w-full object-cover"
           />
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[15%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[0%] md:px-8 md:pt-0 xl:-translate-y-[15%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[23%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[10%] md:px-8 md:pt-0 xl:-translate-y-[23%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
-            <h4 className="mb-2 text-[0.9rem] font-medium tracking-[4px] text-white uppercase md:mb-4.5 md:text-[0.8rem] lg:text-lg">
+            <h4 className="md:mb-4.0 mb-2 text-[0.9rem] font-medium tracking-[4px] text-white uppercase md:text-[0.8rem] lg:text-lg">
               Clubs & Communities
             </h4>
-            <h1 className="mb-3 max-w-[900px] text-3xl leading-[1.1] font-bold text-white md:mb-6 md:text-5xl xl:text-[4.5rem]">
+            <h1 className="mb-2 max-w-[900px] text-3xl leading-[1.1] font-bold text-white md:mb-4 md:text-5xl xl:text-[4.5rem]">
               Run your club. <br />
               Grow your community. <br />
               <span className="text-primary">Get paid.</span>
             </h1>
-            <p className="mb-5 max-w-[900px] text-base leading-[1.4] text-white drop-shadow-sm md:text-2xl">
+            <p className="mb-0 max-w-[900px] text-lg leading-[1.4] text-white drop-shadow-md md:text-2xl md:text-3xl">
               Cluck brings your club’s communication, events, challenges,
               leaderboards, and programming into one place. Powered by member
               activity so it’s easier to organize, easier to grow, and easier to
-              monetize. <br />
-              Free to run. Built to grow with you.
+              monetize. Free to run. Built to grow with you.
             </p>
+          </div>
+        </div>
+      </section>
 
-            <div className="flex w-full justify-center">
-              <div className="w-[100%] rounded-[40px] border border-white/20 bg-white/10 p-3 backdrop-blur-sm md:w-auto md:p-6 lg:p-8">
+      {/* Unified Signup Form Section - Below Header/Hero for all devices */}
+      <section className="relative z-30 -mt-10 px-4 pb-0 md:-mt-20">
+        <div className="mx-auto max-w-5xl">
+          <div className="overflow-hidden rounded-[40px] border border-white/20 bg-white/90 p-1 shadow-2xl backdrop-blur-md md:p-2 lg:bg-white/95">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              {/* Left Column: Form */}
+              <div className="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
                 <SignupForm
                   ctaText="Get Early Access"
                   description="Early access invites. No spam."
                   showInterests={false}
-                  pageName="clupspage"
-                  descriptionClassName="text-primary/70"
+                  pageName="clubs"
+                  descriptionClassName="text-black/60"
                 />
+              </div>
+
+              {/* Right Column: Benefits */}
+              <div className="bg-primary/5 flex flex-col justify-center rounded-[32px] p-6 sm:p-10 lg:p-12">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary/10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+                      <Lock size={18} className="text-[#1884be]" />
+                    </div>
+                    <p className="text-sm font-bold text-black/80">
+                      12 Month Rate Lock
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary/10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+                      <BadgeCheck size={18} className="text-[#3fa36c]" />
+                    </div>
+                    <p className="text-sm font-bold text-black/80">
+                      Lifetime Verified Badge
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary/10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+                      <Star size={18} className="text-[#f05a28]" />
+                    </div>
+                    <p className="text-sm font-bold text-black/80">
+                      First Cluck Event VIP Access
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary/10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+                      <Trophy size={18} className="text-[#6b3fa0]" />
+                    </div>
+                    <p className="text-sm font-bold text-black/80">
+                      Win 1 Year Of Premium
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

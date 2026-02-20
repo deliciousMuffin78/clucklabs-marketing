@@ -81,7 +81,7 @@ export default function BrandsPage() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[25%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[14%] md:px-8 md:pt-0 xl:-translate-y-[25%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[25%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[14%] md:px-8 md:pt-0 xl:-translate-y-[20%] xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="md:mb-4.0 mb-2 text-[0.9rem] font-medium tracking-[4px] text-white uppercase md:text-[0.8rem] lg:text-lg">
               Brands · Local Businesses

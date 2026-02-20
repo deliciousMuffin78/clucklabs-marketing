@@ -89,14 +89,14 @@ export default function SignupForm({
         </div>
         <h3
           className={`font-bold ${
-            showInterests ? "text-primary" : "text-white text-shadow-lg"
+            showInterests ? "text-primary" : "text-black"
           } dark:text-white ${layout === "compact" ? "text-lg" : "text-2xl"}`}
         >
           You're on the list!
         </h3>
         <p
           className={`mt-1 font-bold ${
-            showInterests ? "text-primary" : "text-white text-shadow-lg"
+            showInterests ? "text-primary" : "text-black/70"
           } dark:text-manatee ${layout === "compact" ? "text-sm" : "text-sm"}`}
         >
           {layout === "compact"

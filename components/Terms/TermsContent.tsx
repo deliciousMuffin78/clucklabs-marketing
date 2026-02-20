@@ -9,7 +9,7 @@ export default function TermsContent({ showTitle = true, className = "" }: Terms
   return (
     <div className={`container mx-auto max-w-4xl px-4 ${className}`}>
       {showTitle && (
-        <h1 className="mb-8 text-4xl font-bold text-black dark:text-white">
+        <h1 className="mb-8 text-center text-4xl font-bold text-black md:text-left dark:text-white">
           Terms of Service
         </h1>
       )}

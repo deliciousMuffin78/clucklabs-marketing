@@ -9,7 +9,7 @@ export default function PrivacyContent({ showTitle = true, className = "" }: Pri
   return (
     <div className={`container mx-auto max-w-4xl px-4 ${className}`}>
       {showTitle && (
-        <h1 className="mb-8 text-4xl font-bold text-black dark:text-white">
+        <h1 className="mb-8 text-center text-4xl font-bold text-black md:text-left dark:text-white">
           Privacy Policy
         </h1>
       )}

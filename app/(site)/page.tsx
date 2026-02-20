@@ -45,7 +45,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full -translate-y-[28%] items-center justify-center px-4 pt-20 text-center md:-translate-y-[14%] md:px-8 md:pt-0 xl:-translate-y-[18%] xl:px-0">
+        <div className="max-w-c-1315 relative z-10 mx-auto flex h-full items-start justify-center px-4 pt-[120px] text-center md:px-8 xl:px-0">
           <div className="flex w-full flex-col items-center lg:w-4/5">
             <h4 className="mb-2 text-[0.6rem] font-medium tracking-[4px] text-white uppercase sm:text-[0.7rem] md:mb-4.5 md:text-[0.8rem] lg:text-[0.9rem]">
               Clubs · Individuals · Pros
